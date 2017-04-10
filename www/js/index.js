@@ -37,23 +37,35 @@ var app = {
 
 //        admob.initAdmob("ca-app-pub-5520633259009545/7928666319","ca-app-pub-5520633259009545/7928666319");
 
+
+        // first of all we set this plugin
         jQuery(document).ready(function() {
           jQuery("time.timeago").timeago();
         });
 
         var vTimeOut;
 
+        // the we put some vars in localStorage
+        //roffset is not used anymore
+        // iAlreadyGotMyPermission is used to check if the user is logged. We set to 0, then, later, we check if the user has a tracker or logs in
+        // modal is to remind kollaj that there's no modal window opened at this momment
         window.localStorage.setItem("roffset", 0);
         window.localStorage.setItem("iAlreadyGotMyPermission", 0);
         window.localStorage.setItem("modal",0);
-
+        // email second pass, just another check that we'll be doing with the email
         var emailSecondPass = 0;
 
+        // f identify(arr)
+        // POSTs an array to kollaj.net
+        // in json format
         function identify(arr)
         {
-
+            //actionCall within identify responds altering the Client view&DOM according to the server answer
           function actionCall(obj)
           {
+              //the server answers with an obj.objectName
+              //we then have to see what the object's value is.
+              //and tweak the client answer to it.
             //register email
             if (obj.email == "gotTheSame")
             {
@@ -70,35 +82,41 @@ var app = {
             {
               window.localStorage.setItem("unamePass", "pass");
             }
-            //registrationQuery
-            if (obj.uname == "gotTheSame")
-            {
-              window.localStorage.setItem("unamePass", "gotTheSame");
-            } else if (obj.uname == "pass")
-            {
-              window.localStorage.setItem("unamePass", "pass");
-            }
+              //for the above email & username checks,
+              //gotTheSame = BAD
+              //pass = good
 
+              // registration query
+
+              // if = sameUname
+              // server verified that there's another user with this username
             if (obj.registrationQuery == "sameUname")
             {
               window.localStorage.setItem("registrationQuery", "nah")
               window.localStorage.setItem("unamePass", "gotTheSame");
             } else if (obj.registrationQuery == "sameEmail")
             {
+               //server verified that there's another user with this email
               window.localStorage.setItem("registrationQuery", "nah")
               window.localStorage.setItem("emailPass", "gotTheSame");
             } else if (obj.registrationQuery == "success")
             {
+                //or we have success, we ALERT joyfully the user that they're registered
+                // we set loggedAs=USERNAME and a md5(tracker) generated in the server
+                //kollajDistance NOT IN USE ANYMORE, but gotta remove all refs to it from the client (& maybe some on the serverSide), or kollaj will crash!
               alert("you regged <3");
               window.localStorage.setItem("registrationQuery", "pass");
               window.localStorage.setItem("loggedAs", obj.newUsername);
               window.localStorage.setItem("tracker", obj.tracker);
               window.localStorage.setItem("kollajDistance", obj.kollajDistance);
+                // once we have everything set, we reload the whole thing... Not a good method, as it's a bit slow-ish...
+                // we might wanna change this?
               location.reload();
             }
             //loginQuery
             if (obj.loginQuery == "noCookiesForYou")
             {
+                // kollaj doesnt use cookies, but saying noCookiesForYou = not logged in!
               $("#loginContainer").css({"display":"block"});
 
               window.localStorage.setItem("loginQuery", "nah");
@@ -106,25 +124,37 @@ var app = {
               window.localStorage.setItem("tracker", "trackingYou");
 
               document.getElementById("loginText").innerHTML = "<span style='color:red'>Hey, something's wrong!</span>";
+                // and we also let the user know there's something wrong.
             }
             else if (obj.loginQuery == "imLettingYa")
             {
+                // if the server says imLettingYa, the client happily obeys its master
               window.localStorage.setItem("loginQuery", "pass" )
               window.localStorage.setItem("loggedAs", obj.loginUser);
               window.localStorage.setItem("tracker", obj.tracker);
               window.localStorage.setItem("kollajDistance", obj.kollajDistance);
-              $("#loginContainer").css({"display":"none"});
+                // sets loggedAs and a Tracker
+              $("#loginContainer").css({ "display": "none" });
+                //removes the login container from view
               if(window.localStorage.getItem("iAlreadyGotMyPermission") == 0)
               {
+                  //and if this is the first logIn of the user
                 var arr1 = {canYou:"giveMeMyStats", myName:window.localStorage.getItem("loggedAs"), tracker: window.localStorage.getItem("tracker"), uuid: device.uuid, devModel: device.version, devPlatform:device.platform}
-                identify (arr1);
+                identify(arr1);
+                  // requests the stats
                 var arr = {canYou:"showMeMyFeed", myName:window.localStorage.getItem("loggedAs"), tracker: window.localStorage.getItem("tracker"), uuid: device.uuid, devModel: device.version, devPlatform:device.platform, roffset:0};
                 identify(arr);
+                  // requests a feed
                 window.localStorage.setItem("iAlreadyGotMyPermission", 1);
+                  // and we let it know it's got a permission to enjoy kollaj
               }
             }
             else if (obj.loginQuery == "imLettingYaOnLogin")
             {
+                //imLettingYaOnLogin only is given by the server if we ask the server canYou:makeSureMeIsNotMiniMe
+                // used on automated login with loggedAs and a tracker in localStorage
+                // doesnt work perfectly so we still gotta ask the server to deliver us a feed & stats though.
+
               window.localStorage.setItem("loginQuery", "pass" )
               window.localStorage.setItem("loggedAs", obj.loginUser);
               window.localStorage.setItem("tracker", obj.tracker);
@@ -135,7 +165,12 @@ var app = {
               var arr = {canYou:"showMeMyFeed", myName:window.localStorage.getItem("loggedAs"), tracker: window.localStorage.getItem("tracker"), uuid: device.uuid, devModel: device.version, devPlatform:device.platform, roffset:0};
               identify(arr);
               window.localStorage.setItem("iAlreadyGotMyPermission", 1);
+                // same as above
             }
+
+              //logout is made if we request the server with a canYou:sayBye
+              // the server sends an obj.bye="bye"
+              // and the rest of the logout is done on serverside
 
             if (typeof obj.bye != "undefined" )
             {
@@ -143,50 +178,69 @@ var app = {
               location.reload();
             }
 
+              //if we request a passChange and it runs good
+              // server says> obj.urPassChange = "done"
+
             if (typeof obj.urPassChange != "undefined" )
             {
               $("#deepMenuChooser").css({"display":"block"});
               $("#myPassSet").css({"display":"none"});
-              $("#deepMenu").css({"display":"none"});
+              $("#deepMenu").css({ "display": "none" });
+              //update views
               $modal = $('.modal-frame');
               $overlay = $('.modal-overlay');
               window.localStorage.setItem("modal", 0);
               $overlay.removeClass('state-show');
               $modal.removeClass('state-appear').addClass('state-leave');
+                //remove the modal (not sure if we'll be removing it in the future though)
             }
 
+              // server sends urNameMate=realName
+              // on realName change request (canYou:setMyName)
+              // or on canYou:giveMeMyName request
             if (typeof obj.urNameMate != "undefined")
             {
               window.localStorage.setItem("realName", obj.urNameMate);
               $("#myNameIs").val(obj.urNameMate);
+                // we set it to localStorage, and set it as the value of the name change input
             }
 
             if (typeof obj.urBioMate != "undefined")
             {
+                // same as realName, delivered on canYou:setMyBio or canYou:giveMeMyBio 
               window.localStorage.setItem("myBio", obj.urBioMate);
               $("#currentBio").html(obj.urBioMate);
             }
 
             if (obj.urEmailSearch == "gotTheSame")
             {
+                // if we wanna change the email, but our new mail miraculously is in use
               $("#myEmailIs").css({background:"rgba(255,0,0,0.4)"})
               window.localStorage.setItem("emailCheck", "no");
             }
 
             if (obj.urEmailSearch == "isValidMate")
             {
-              $("#myEmailIs").css({background:"rgba(0,255,0,0.4)"});
+                //changing the mail to a valid one
+                $("#myEmailIs").css({ background: "rgba(0,255,0,0.4)" });
               window.localStorage.setItem("emailCheck", "yes");
             }
 
             if (typeof obj.urEmailMate != "undefined" )
             {
+                // we requested to change the email and the server
+                //ACCEPTED & CHANGED THE EMAIL!
               window.localStorage.setItem("myEmail", obj.urEmailMate);
               $("#myEmailIs").val(obj.urEmailMate);
             }
 
             if(typeof obj.client != "undefined")
             {
+                // here we advise users they should update, and try to block them off kollaj.
+                // I don't like buggy outdated clients
+                // especialmente nesta altura do ano XD
+                // grande feature that we'll be using 
+
               alert("It is imperative ou update Kollaj so you can continue using it. \n Thanks for da understanding yo!");
               $abt = $("#abt");
               $abt.html("");
@@ -198,6 +252,7 @@ var app = {
 
             if (typeof obj.urKollajDistance != "undefined" )
             {
+                // birdPoop on this
               window.localStorage.setItem("kollajDistance", obj.urKollajDistance);
               var myNewHeight = window.localStorage.getItem("originalHeight") * obj.urKollajDistance;
               //$("#profile").css({"height":myNewHeight+"px"});
@@ -207,15 +262,27 @@ var app = {
 
             if (typeof obj.urFollowersAtm != "undefined" )
             {
+                // answer on canYou:giveMeMyStats
+                // there are two obj's but checking if one is present is enough
+                // obj.urFollowersAtm = INT
+                // obj.uFollowingAtm = INT
               window.localStorage.setItem("myProfileFollowing",obj.uFollowingAtm);
               window.localStorage.setItem("myProfileFollowers",obj.urFollowersAtm);
 
               $("#profileFollowing").html(obj.uFollowingAtm);
               $("#profileFollowers").html(obj.urFollowersAtm);
+                // we also set it to be the default val in the profile menu header
+                // although we continue requesting it when we visit our profile
+                // later on we should really consider storing some things in a localDB
+                // to make fewer overall requests to the server
+
             }
 
             if(typeof obj.urCalibration != "undefined")
             {
+                //the calibration...
+                // sad story
+                // we know it though   
               window.localStorage.setItem("myCalibration", obj.urCalibration);
               $(".calibrationValue").html(obj.urCalibration);
               $("#calibrationRanger").val(obj.urCalibration);
@@ -223,27 +290,36 @@ var app = {
 
             if(typeof obj.thanksForTheWarning != "undefined")
             {
+                // if user clicks on the triangle to alert us about an image that they think its bad
+                // the server returns an non empty thanksForTheWarning object
               bringInTheAlertWindow();
             }
 
             if(obj.urCalibration == "hateToMakeYouSadButUrOnUrOwn")
             {
+            // if the phone is on its own as its the first used on Kollaj and hasnt been calibrated ever before.
               window.localStorage.setItem("myCalibration", "hateToMakeYouSadButUrOnUrOwn");
               $(".calibrationValue").html("0.0");
               $("#calibrationRanger").val("0.00");
-              $("#calibrateMsg").text(" - The good news is that you'll have to calibrate manually, \n your phone is new to Kollaj! \n ");
+              $("#calibrateMsg").text(" - The good news is that you'll have to calibrate manually, \n your phone is new to Kollaj! \n (CLICK THE ICON ON THE LEFT CORNER TO HIDE THIS)");
             }
 
 
             if(obj.yourVibe == "hasBeenVibed")
             {
+                // once user sends viber request & the server accepts it
+                // the server answers simply with obj.yourVibe = hasBeenVibed
               //console.log("BAM");
             }
 
 
             if (typeof obj.thePpzDatReFollingU != "undefined")
             {
-
+                // canYou:tellMeWhoFollowsMe
+                // answer: json array containing various sub arrays each contains:
+                // userUrFollowing : username
+                // uVeBinAccepted : 0/1 -- preparing for private accounts
+                // usrAvatar: usrAvatarPath use as : //kollaj.net/uploads/[usrAvatarPath]
               window.localStorage.setItem("modal",0);
 
               $whoAreMyFollowers = $("#whoAreMyFollowers");
@@ -256,6 +332,8 @@ var app = {
                 {
                   flwState = "- pending approval!"
                 }
+                  //above: preparing for private accs
+                  // below: ALMOST a mess.
                 $whoAreMyFollowers.append(""+
                 "<div class='notifHolder' id='usrFollowRes"+i+"' data-openuser='"+arr[i].userUrFollowing+"'>"+
                 "  <div class='notifPPHolder'>"+
@@ -263,24 +341,29 @@ var app = {
                 "  </div>"+
                 "  <p>@"+arr[i].userUrFollowing+" "+flwState+"</p>"+
                 "</div>");
-
+                  //then, after creating the div, we set the user avatar 
                 $("#usrFollowResImg"+i).css({"background-image":"url('https://kollaj.net/uploads/"+arr[i].usrAvatar+"')"});
 
-                 // child: searchResCLICK
+                 // child: If user clicks on the profile item
                  $("#usrFollowRes"+i).click(function(){
                    var seekProfile = $(this).data("openuser");
                    //console.log(seekProfile);
                    $("#profileName").html("<div id='callProfAction' class='arrow' data-seeProf='"+seekProfile+"'>@"+seekProfile+"</div>");
                    $("#callProfAction").click (function()
                    {
+                    //see the profile menu for this user
                      seeProf = seekProfile;
                      callDaProfileMenu(seeProf);
                      window.localStorage.setItem("history", "smProfile");
                    });
+                    // we request server to show us the profile of the user
                    var arr = {canYou:"showMeSomeProfile", myName:window.localStorage.getItem("loggedAs"), seeProfile: seekProfile, tracker: window.localStorage.getItem("tracker"), uuid: device.uuid, devModel: device.version, devPlatform:device.platform, proffset:0};
                    identify(arr);
+                     //we set the views
                    $("#profile").css({"display":"block"});
                    $("#whoAmIFollowing").css({"display":"none"});
+                     // set the views
+                     // and hide the modal
                    $modal = $('.modal-frame');
                    $overlay = $('.modal-overlay');
                    window.localStorage.setItem("modal", 0);
@@ -293,7 +376,7 @@ var app = {
             }
 
 
-
+              // pretty much the same, but about who YOU are following:
             if (typeof obj.thePpzUrFollowingAre != "undefined")
             {
 
@@ -343,7 +426,9 @@ var app = {
 
               }
             }
-
+              // I think we can shit on this, we don't use it.
+              // there might be dependency issues though
+              // a good clean is recommended
             if(typeof obj.urDescMate != "undefined")
             {
 
@@ -377,23 +462,33 @@ var app = {
               });
               return false;
             }
-
+              // if canYou:letMeFollowThem
+              // the server has to decide, as it's already rigged for private accs
+              // it now alwayts responds with 1
             if (obj.myDecisionAboutYourFollowing == 1) {
               $("#profileFollowers").data( "iFollow", 1);
               $("#profileFollowers").css({"background":"rgba(100, 149, 237, 0.7)"})
               $("#profileFollowers").css({"color":"ghostwhite"});
+                //and we update the view.
             }
 
             if (obj.myDecisionAboutYourFollowing == 2) {
               //alert ("Wait untill they accept you!");
             }
-
+              // if canYou:makeMeUnfollowThem
+              // request to UNFOLLOW
+              // the server answers with 0 if NOT FOLLOWING
             if (obj.didILetYouUnfollow == 0) {
               $("#profileFollowers").data( "iFollow", 0);
               $("#profileFollowers").css({"background":"white"})
               $("#profileFollowers").css({"color":"#003440"})
             }
 
+              //canYou:giveMeTheCommentsOfThisPost
+              //gives an obj.commentsRes
+              //json containing array with:
+              //commenter : USERNAME
+              //comment : COMMENT
             if (typeof obj.commentsRes != "undefined") {
               var arr = obj.commentsRes;
               $("#feedComments"+obj.gbt).html("")
