@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 534.5 533.6" style="enable-background:new 0 0 20 20;" xml:space="preserve"  zoomAndPan="disable">
+<style type="text/css">
+	#pulsar{
+	  stroke-dasharray:281;
+	  -webkit-animation: dash 2.5s infinite linear forwards;
+	}
+</style>
+<path stroke="rgba(15,0,0,0.1)" fill="none" stroke-width="1" stroke-linejoin="round"
+			d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+			<path id="pulsar" stroke="rgba(150,10,195,1)" fill="none" stroke-width="1" stroke-linejoin="round"
+	          d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+
+</svg>

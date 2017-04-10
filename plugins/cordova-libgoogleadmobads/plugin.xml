@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Copyright (c) 2014 AppFeel. All rights reserved.
+Use of this source code is governed by a MIT license that can be
+found in the LICENSE file.
+-->
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0" version="7.13.1" id="cordova-libgoogleadmobads">
+  <name>iOS Google AdMob Ads library</name>
+  <description>iOS Google AdMob Ads library base dependency for other plugins</description>
+  <author>AppFeel</author>
+  <license>MIT</license>
+  <keywords>ad,ads,admob,google,advertising,advertisment,publicity,earn,win,play,services,iad,flurry,monetization,money,appfeel</keywords>
+  <repo>https://github.com/appfeel/google-iosadmobads.git</repo>
+  <issue>https://github.com/appfeel/google-iosadmobads/issues</issue>
+  
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+      <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+      </dict>
+    </config-file>
+    <!-- Google AdMob framework -->
+    <framework src="src/ios/GoogleMobileAds.framework" custom="true" />
+    
+    <!-- iOS development frameworks needed by Google AdMob framework -->
+    <framework src="AdSupport.framework" />
+    <framework src="AudioToolbox.framework" />
+    <framework src="AVFoundation.framework" />
+    <framework src="CoreFoundation.framework" />
+    <framework src="CoreMedia.framework" />
+    <framework src="CoreTelephony.framework" />
+    <framework src="MessageUI.framework" />
+    <framework src="QuartzCore.framework" />
+    <framework src="StoreKit.framework" />
+    <framework src="SystemConfiguration.framework" />
+    <framework src="EventKit.framework" />
+    <framework src="EventKitUI.framework" />
+  </platform>
+</plugin>

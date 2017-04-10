@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "345123219035",
+    "firebase_url": "https://kollaj-8b5fb.firebaseio.com",
+    "project_id": "kollaj-8b5fb",
+    "storage_bucket": "kollaj-8b5fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345123219035:android:a5f84df8884e621c",
+        "android_client_info": {
+          "package_name": "net.kollaj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345123219035-dp8hmbn3l8h29htksm18u5mv9usf25m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb_POFFAfA7IBPPUluQQBwmiH_nn0tqoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<!--
+Aloha, before all, i am very thankfull to any & every one who in||&&directly helped to make this pile of nights come to life
+friends, stackoverflowers, codepeners <3
+to anyone who really wants to find you, google, search, read.
+We all developers know how to google, and that is the truth.
+As I started rewriting the code, I started commenting more, and
+also including references to where I got the code from.
+Better habbits, & a better being I guess.
+Of course, I might've forgot some times, so please do excuse me || #sueAnotherStartUp .
+and...
+signing just a bit after 4:20,
+4:52am 5/1/17 Kristian Atanasov
+
+ps, to anyone reading this, start watching if you dont, vox, tedtalks, veritassium, scishow, all those great yt's, and if you know something great, share. i420it
+pps:omg loooooooook here -v HAHAHHAHAHAHAHAHHA proof this shit's #since2016 OMG <3 Kollaj FTW <3
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+<!--    <meta http-equiv="Content-Security-Policy" content="default-src * localhost 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 192.168.1.117 'self'" /> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * localhost kollaj.net 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src * kollaj.net" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css" /> -->
+    <title>Kollaj</title>
+</head>
+
+<body>
+
+  <div id="abt">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.228 117.552" overflow="visible" zoomAndPan="disable"><path fill="none" d="M0 0h468.23v117H0z"/><path fill="#02343F" d="M113.1 94.24H101L68.7 51.32l-9.27 8.23v34.7h-10.3V5.75h10.3V49.6L99.6 5.72h12.17L76.17 44.2l36.94 50.06zm82.78-44.4c0 14.16-3.58 25.3-10.74 33.42S168 95.43 155.26 95.43c-13.04 0-23.1-4-30.18-11.96-7.08-7.97-10.63-19.23-10.63-33.76 0-14.4 3.56-25.55 10.66-33.5s17.2-11.9 30.3-11.9c12.7 0 22.65 4.05 29.8 12.1 7.14 8.1 10.7 19.24 10.7 33.44zm-70.53 0c0 12 2.56 21.1 7.66 27.3s12.55 9.3 22.28 9.3c9.8 0 17.2-3.1 22.22-9.28 5-6.18 7.5-15.3 7.5-27.32 0-11.92-2.5-20.95-7.48-27.1-4.98-6.17-12.35-9.25-22.12-9.25-9.8 0-17.26 3.1-22.37 9.3s-7.65 15.2-7.65 27.02zm84.08 44.4V5.74h10.3v79.2h39.06v9.3h-49.4zm58.17 0V5.74h10.3v79.2h39.05v9.3H267.6zm119.9 0l-11.02-28.2h-35.5l-10.9 28.2h-10.42l35-88.88h8.67l34.83 88.88H387.5zM373.27 56.8l-10.3-27.4c-1.34-3.48-2.7-7.74-4.12-12.78-.9 3.87-2.16 8.13-3.82 12.77L344.6 56.8h28.67z"/><path fill="#02343F" d="M397.4 117.55c-3.8 0-6.78-.54-8.96-1.63v-8.77c2.87.8 5.86 1.2 8.96 1.2 4 0 7.04-1.2 9.12-3.62 2.07-2.42 3.1-5.9 3.1-10.47V5.74h10.3V93.4c0 7.67-1.93 13.6-5.8 17.82-3.88 4.22-9.45 6.33-16.72 6.33z"/><path fill="#FFF" d="M316.95 94.25h-6.44l3.7-9.38h2.8"/><path fill="#FFF" d="M315.23 81.2s-2.97 14.24-3.97 14.93 4.4 7.5 6.72-.75 5.97-13.16 2.84-13.66-5.6-.53-5.6-.53z"/></svg>
+
+  <h1> Thank you for using. </h1>
+  <h2> Joking, thanks for seeing the ads </h2>
+  <h3> Joking Joking, thanks for both! Really! </h2>
+
+  <p>
+    Now with a serious, corporative, language.
+  </p>
+  <p>
+    Kollaj is the work of Kristian Krasimirov Atanasov. Put together with some artistic mind, lots of stacks overflowing, clearly - I had code, I had a pen, BAM! I had the help of codepen. Cofee@420, and <i>a little help from my friends</i>. I shall name them, in no order of relevance: <br/> -Beatriz França, <br/> -João Monteiro,<br/> -João Silva,<br/> -Carlos Silva,<br/> -Filipe Nunes,<br/> -Pedro Ferreira, ''''</p>
+
+  <p>
+    I probably would like the following bolded out. <br/>
+    <b> I am not a programmer. I am an artist, a self made man. </b>
+    This work is nothing more than a proof of concept service TRYING to stay alive. A startup. And a little buggy, slow app. but <br/>
+    <b>DON'T PANIC,<br/>
+    WE WILL MAKE IT BETTER, JUST KEEP USING IT!<br/> </b>
+    I made Kollaj with the intention to wake a more artistically oriented mindset breaking nowadays's ''in the box'' streamlined fashion of content sharing.
+   <br/>
+    That is, all content we shared untill now was made to fit a certain layout, order. Not only in design terms, but also as a piece.<i> Kollaj aims to break this rule</i>, it is a tool that allows you, and everyone, to gather the important pieces, and conjugate them into something unique. Be it to make a piece of art, to share how your day or vacations followed, or keep a kollaj with the latest news. <br/>
+    Allowing you to cut photos (and later on videos), is a way to make your feed personal, and pleasant. The geometric patterns you will use in your Kollaj will form an unique and natural feel of your feed.<br/> <br/>And YES! Cutting is really easy, the Editor, Ed for short is about a couple of months worth of work, and he came from Coffeelandia. Ed is the core of Kollaj. He had various shapes, and forms, but he finally materialized in the island of stability.<br/>
+    Both in terms of feel, and being stable enough to release. <br/>
+    His final accounted shape can be found in the source code of Kollaj and the base model @ my Codepen account on codepen.io/spacewalkingninja. <br/>
+    Ed works with snapsvg under the hood, and allows you to make two consecutive cuts to the photo. Not more, not less.<br/> The side of the photo that gets deleted is the smaller, NOT containing the center point.. yeah that's why it appears when you cut. <br/>
+    This is about the point where I mention <i> Ed's worst nightmare</i>. New Phones on Kollaj. <br/>
+    Not that he has some kind of problem with them or something, it's just that as the feed os the user expands, I think this is HIGHLY LIKELY to be due to either CSS Pixels, to Pixels, and about I don't know what other kinds of conversion and <i>voodoo</i>, values get distorted to about 0.01-0.09 % over a greater distance from the start when saving the photo. Like when saving a photo at 6 000 pixels from the start, this picture might get saved @what is visually 6090px.<br/>This is why there is the calibration tool at your disposal, when things start going wrong. Usually the blunt test tells you how well your phone is calibrated. (Cut a blunt, and save it over the mouth of someone on a picture far down your Kollaj, if the blunt stays where you put it, EVERYTHING IS FINE! If not satisfied, calibrate, higher calibration means photos will appear HIGHER on your Kollaj.) <br/>
+    This is one of my most prioritized bugs to be resolved. Any ideas are appreaciated and in the meantime, as soon as I have time to really fix this, I shall :) ! <br/>
+
+    Kollaj is not based about likes or dislikes, Kollaj is all about vibes. Your photo can be somewhere high or low on the rainbow. The meaning, if such exists, you attribute on your own.<br/>
+    Only you are allowed to see the medium color of your photos. You can't see other users' photos color, or <i>vice-versa</i>.
+  </p>
+  <p> Clearly, I hope you enjoy Kollaj, even as it is today. In the short to long term, I hope we can make Kollaj a better service, improving not only speeds and user experience, but adding relevant new features as the user base grows, and we see what else can we innovate.
+
+  </div>
+
+  <div class="modal-frame">
+    <div class="modal">
+  		    <div class="modal-inset">
+        			<div class="button close"><div class="close-button"> </div></div>
+              <div id="deepMenu">
+
+                <div id="deepMenuChooser">
+                  <input id="setMyAvatar" class="loginButton" type="button" value="AVATAR">
+                  <input id="setMyName" class="loginButton" type="button" value="REAL NAME">
+                  <input id="setMyBio" class="loginButton" type="button" value="BIO">
+                  <input id="setMyPass" class="loginButton" type="button" value="PASSWORD">
+                  <input id="setMyEmail" class="loginButton" type="button" value="EMAIL">
+                  <p style="color:white; text-align:center;">
+                    This is where you set your settings.<br/><br/>
+                    Or change them at will.<br/><br/>
+                    It's all really up to you.<br/><br/>
+                    To be honest, you can do nothing.
+                  </p>
+                  <input class="loginButton" type="button" value="NOTHING">
+                </div>
+
+                <div id="myNameSet">
+                  <input id="myNameIs" class="loginInput" type="text" placeholder="Your name">
+                  <input id="myNameSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+                <div id="myBioSet">
+                  <p style="color:white; text-align:center; word-wrap: break-word; margin-top:3rem; font-size:1.2rem; line-height:1.3rem" id="currentBio"></p>
+                  <input id="myBioIs" class="loginInput" type="text" placeholder="Your bio">
+                  <input id="myBioSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+                <div id="myPassSet">
+                  <input id="myOldPass" class="loginInput" type="password" placeholder="old password">
+                  <input id="myNewPass" class="loginInput" type="password" placeholder="new password">
+
+                  <input id="myPassSaver" class="loginButton" type="button" value=">SAVE<">
+
+                </div>
+
+                <div id="myEmailSet">
+                  <input id="myEmailIs" class="loginInput" type="text" placeholder="Your E-Mail">
+                  <input id="myEmailSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+              </div>
+
+              <div class="modal-body" id="dasModal">
+  				        <!--<h3 class="leUsernam">Such Modal, Much Animate!</h3>
+          				<p>Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
+          <p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p> -->
+        			</div>
+              <div class="modal-body" style="display:none" id="infiniteScrollModal">
+                <div id='profilePicDiv' class="modalAddition">
+                  <div class='crop' id='ppicindaModal'></div>
+                </div>
+                <div id='repeat'>
+                  <div class='section' id='section-one'>
+                    <h1>Profile Pic</h1>
+                  </div>
+                  <div class='section' id='section-two'>
+                    <h1>Profile Description</h1>
+                  </div>
+                  <div class='section' id='section-three'>
+                    <h1>Password and Email</h1>
+                  </div>
+                  <div class='section' id='section-four'>
+                    <h1>Sign out!</h1>
+                  </div>
+                  <div class='section' style='background: #e61249;' id='last'>
+                    <h1>About Kollaj</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div id="whoAmIFollowing">
+
+              </div>
+              <div id="whoAreMyFollowers">
+
+              </div>
+
+          </div>
+    	</div>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <div id="thatThing">
+
+      <div class="mood-list-wrapper">
+
+        <div class="mood-picker" id="picker">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="169" height="132" viewBox="0 0 169 132" style="enable-background:new 0 0 410.23 410.23;" xml:space="preserve" overflow="visible" zoomAndPan="disable">
+            <path fill="rgba(0,0,0,0.85)" d="M134.039,178.521c0,5.609-4.547,10.156-10.155,10.156H42.64c-5.609,0-10.156-4.547-10.156-10.156V-55.056
+            	c0-5.609,4.547-10.155,10.156-10.155h81.244c5.608,0,10.155,4.546,10.155,10.155V178.521z"/>
+
+          		<path fill="#FFFFFF" d="M121.287,41.9c-1.254-3.575-3.449-6.793-6.356-9.32c-2.911-2.521-6.413-4.245-10.121-4.979
+          			c-1.402-0.276-2.838-0.415-4.277-0.415c-4.194,0-8.27,1.187-11.793,3.427c-2.123,1.354-3.983,3.044-5.518,5.004
+          			c-1.535-1.953-3.396-3.645-5.516-4.991c-3.52-2.241-7.596-3.428-11.787-3.428c-3.492,0-6.997,0.868-10.134,2.497
+          			c-3.135,1.633-5.854,4.001-7.865,6.861c-2.055,2.924-3.31,6.205-3.721,9.741c-0.364,3.097-0.083,6.422,0.833,9.881
+          			c1.813,6.856,5.828,13.112,8.88,17.154c6.629,8.775,15.745,16.75,27.867,24.365l1.449,0.906l1.449-0.906
+          			c14.91-9.371,25.319-19.26,31.817-30.239c3.737-6.313,5.685-11.936,5.952-17.19C122.596,47.338,122.207,44.522,121.287,41.9z
+          			 M117.008,49.988c-0.22,4.353-1.921,9.166-5.199,14.7c-5.841,9.863-15.199,18.865-28.581,27.474
+          			C72.395,85.191,64.217,77.947,58.255,70.05c-2.755-3.65-6.374-9.262-7.96-15.262c-0.74-2.796-0.973-5.438-0.689-7.858
+          			c0.307-2.63,1.242-5.062,2.774-7.245c1.506-2.146,3.556-3.926,5.917-5.158c2.365-1.232,5.001-1.883,7.622-1.883
+          			c3.153,0,6.221,0.894,8.866,2.579c2.576,1.641,4.651,3.951,5.995,6.689l2.448,4.992l2.441-4.992
+          			c1.34-2.744,3.415-5.062,5.993-6.702c2.649-1.686,5.717-2.579,8.87-2.579c1.086,0,2.17,0.108,3.22,0.313
+          			c2.784,0.549,5.414,1.845,7.606,3.753c2.195,1.902,3.849,4.321,4.791,7.002C116.832,45.653,117.123,47.765,117.008,49.988z
+          			 M83.259,155.34l-14.196-14.918l-6.466,6.83l20.663,21.742l20.669-21.742l-6.473-6.83L83.259,155.34z M83.259,122.395
+          			l-14.196-14.918l-6.466,6.83l20.663,21.742l20.669-21.742l-6.473-6.83L83.259,122.395z M84.044-31.874l14.197,14.918l6.47-6.83
+          			L84.044-45.528L63.378-23.786l6.473,6.83L84.044-31.874z M84.044,1.071l14.197,14.912l6.47-6.831L84.044-12.59L63.378,9.152
+          			l6.473,6.831L84.044,1.071z"/>
+
+          </svg>
+        </div>
+
+        <ul class="mood-list" id="mood-list">
+          <li class="mood-listitem"><span>10</span></li>
+          <li class="mood-listitem"><span>9</span></li>
+          <li class="mood-listitem"><span>8</span></li>
+          <li class="mood-listitem"><span>7</span></li>
+          <li class="mood-listitem"><span>6</span></li>
+          <li class="mood-listitem"><span>5</span></li>
+          <li class="mood-listitem"><span>4</span></li>
+          <li class="mood-listitem"><span>3</span></li>
+          <li class="mood-listitem"><span>2</span></li>
+          <li class="mood-listitem active"><span>1</span></li>
+        </ul>
+      </div>
+
+
+  </div>
+      <div id="loginContainer">
+
+        <div id="linputContainer">
+          <div id="loginLogo"> </div>
+          <input id="loginName" class="loginInput" type="text" placeholder="Username">
+          <input id="loginPassword" class="loginInput" type="password" placeholder="Password">
+          <input id="loginButton" class="loginButton" type="button" value="LOGIN">
+          <p id="loginText" class="loginParagraph"> or if you really haven't yet, just</p>
+          <input id="goToReg" class="loginButton" type="button" value="REGISTER">
+        </div>
+
+        <div id="registerContainer">
+          <div id="loginLogo"> </div>
+          <input id="registerEmail" class="loginInput" type="text" placeholder="E-Mail">
+          <input id="registerName" class="loginInput" type="text" placeholder="Username">
+          <input id="registerPassword" class="loginInput" type="password" placeholder="Password">
+          <p id="loginText" class="loginParagraph">
+            <input type="checkbox" id="tosCheck">
+            <label for="tosCheck">
+              I agree to the <span class="loginInLink" id="showTOS">TOS</span>
+          </p>
+        </label>
+          <input id="registerButton" class="loginButton" type="button" value="REGISTER">
+          <p id="lipErrorText" class="loginParagraph">
+            Just make sure everything's green <br/>
+            and you've read the terms ;) !
+          </p>
+        </div>
+
+        <div id="tosContainer" class="loginLTContainer">
+
+          <input id="tosNot" class="loginButton" type="button" value="BACK">
+
+          <h1>Web Site Terms and Conditions of Use</h1>
+
+          <p>The following terms and conditions (the &quot;Terms and Conditions&quot;) govern your use of this web site, and any content made available from or through this web site, including any subdomains thereof (the &quot;Web Site&quot;).  The Web Site is made available by Time Inc. (&quot;Time Inc.&quot; or &quot;we&quot; or &quot;us&quot;).  We may change the Terms and Conditions from time to time, at any time without notice to you, by posting such changes on the Web Site.  BY USING THE WEB SITE, YOU ACCEPT AND AGREE TO THESE TERMS AND CONDITIONS AS APPLIED TO YOUR USE OF THE WEB SITE.  If you do not agree to these Terms and Conditions, you may not access or otherwise use the Web Site.</p>
+
+          <ol class="termslist">
+          <li>	<h4>Proprietary Rights.</h4>  As between you and Time Inc., Time Inc. owns, solely and exclusively, all rights, title and interest in and to the Web Site, all the content (including, for example, audio, photographs, illustrations, graphics, other visuals, video, copy, text, software, titles, Shockwave files, etc.), code, data and materials thereon, the look and feel, design and organization of the Web Site, and the compilation of the content, code, data and materials on the Web Site, including but not limited to any copyrights, trademark rights, patent rights, database rights, moral rights, sui generis rights and other intellectual property and proprietary rights therein.  Your use of the Web Site does not grant to you ownership of any content, code, data or materials you may access on or through the Web Site.       </li>
+
+          <li>	<h4>Limited License.</h4>  You may access and view the content on the Web Site on your computer or other device and, unless otherwise indicated in these Terms and Conditions or on the Web Site, make single copies or prints of the content on the Web Site for your personal, internal use only.   Use of the Web Site and the services offered on or through the Web Site, are only for your personal, non-commercial use.  </li>
+
+          <li>	<h4>Prohibited Use.</h4>  Any commercial or promotional distribution, publishing or exploitation of the Web Site, or any content, code, data or materials on the Web Site, is strictly prohibited unless you have received the express prior written permission from authorized personnel of Time Inc. or the otherwise applicable rights holder.  Other than as expressly allowed herein, you may not download, post, display, publish, copy, reproduce, distribute, transmit, modify, perform, broadcast, transfer, create derivative works from, sell or otherwise exploit any content, code, data or materials on or available through the Web Site.  You further agree that you may not alter, edit, delete, remove, otherwise change the meaning or appearance of, or repurpose, any of the content, code, data, or other materials on or available through the Web Site, including, without limitation, the alteration or removal of any trademarks, trade names, logos, service marks, or any other proprietary content or proprietary rights notices.  You acknowledge that you do not acquire any ownership rights by downloading any copyrighted material from or through the Web Site.  If you make other use of the Web Site, or the content, code, data or materials thereon or available through the Web Site, except as otherwise provided above, you may violate copyright and other laws of the United States, other countries, as well as applicable state laws and may be subject to liability for such unauthorized use.   </li>
+
+          <li>	<h4>Trademarks.</h4>  The trademarks, logos, service marks and trade names (collectively the &quot;Trademarks&quot;) displayed on the Web Site or on content available through the Web Site are registered and unregistered Trademarks of Time Inc. and others and may not be used in connection with products and/or services that are not related to, associated with, or sponsored by their rights holders that are likely to cause customer confusion, or in any manner that disparages or discredits their rights holders.  All Trademarks not owned by Time Inc. that appear on the Web Site or on or through the Web Site's services, if any, are the property of their respective owners.  Nothing contained on the Web Site should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any Trademark displayed on the Web Site without the written permission of Time Inc. or the third party that may own the applicable Trademark. Your misuse of the Trademarks displayed on the Web Site or on or through any of the Web Site's services is strictly prohibited.  </li>
+
+          <li>	<h4>User Information.</h4>  In the course of your use of the Web Site and/or the services made available on or through the Web Site, you may be asked to provide certain personalized information to us (such information referred to hereinafter as &quot;User Information&quot;).  Time Inc.'s information collection and use policies with respect to the privacy of such User Information are set forth in the Web Site's <a href="http://cgi.timeinc.net/cgi-bin/mail/dnp/privacy_centralized.cgi/tio?dnp_source=E" target="_blank">Privacy Policy</a> which is incorporated herein by reference for all purposes.  You acknowledge and agree that you are solely responsible for the accuracy and content of User Information. </li>
+
+          <li>	<h4>Submitted Materials.</h4>   Unless specifically requested, we do not solicit nor do we wish to receive any confidential, secret or proprietary information or other material from you through the Web Site, by e-mail or in any other way.  Any information, creative works, demos, ideas, suggestions, concepts, methods, systems, designs, plans, techniques or other materials submitted or sent to us (including, for example and without limitation, that which you submit or post to our chat rooms, message boards, and/or our blogs, or send to us via e-mail) (&quot;Submitted Materials&quot;) will be deemed not to be confidential or secret, and may be used by us in any manner consistent with the Web Site's <a href="http://cgi.timeinc.net/cgi-bin/mail/dnp/privacy_centralized.cgi/tio?dnp_source=E" target="_blank">Privacy Policy</a>.  By submitting or sending Submitted Materials to us, you: (i) represent and warrant that the Submitted Materials are original to you, that no other party has any rights thereto, and that any &quot;moral rights&quot; in Submitted Materials have been waived, and (ii) you grant us and our affiliates a royalty-free, unrestricted, worldwide, perpetual, irrevocable, non-exclusive and fully transferable, assignable and sublicensable right and license to use, copy, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, perform, display and incorporate in other works any Submitted Materials (in whole or part) in any form, media, or technology now known or later developed, including for promotional and/or commercial purposes.  We cannot be responsible for maintaining any Submitted Material that you provide to us, and we may delete or destroy any such Submitted Material at any time.</li>
+
+          <li>	<h4>Prohibited User Conduct.</h4>   You warrant and agree that, while using the Web Site and the various services and features offered on or through the Web Site, you shall not: (a) impersonate any person or entity or misrepresent your affiliation with any other person or entity; (b) insert your own or a third party's advertising, branding or other promotional content into any of the Web Site's content, materials or services (for example, without limitation, in an RSS feed or a podcast received from Time Inc. or otherwise through the Web Site), or use, redistribute, republish or exploit such content or service for any further commercial or promotional purposes; or (c) attempt to gain unauthorized access to other computer systems through the Web Site.  You shall not: (i) engage in spidering, &quot;screen scraping,&quot; &quot;database scraping,&quot; harvesting of e-mail addresses, wireless addresses or other contact or personal information, or any other automatic means of obtaining lists of users or other information from or through the Web Site or the services offered on or through the Web Site, including without limitation any information residing on any server or database connected to the Web Site or the services offered on or through the Web Site; (ii) obtain or attempt to obtain unauthorized access to computer systems, materials or information through any means; (iii) use the Web Site or the services made available on or through the Web Site in any manner with the intent to interrupt, damage, disable, overburden, or impair the Web Site or such services, including, without limitation, sending mass unsolicited messages or &quot;flooding&quot; servers with requests; (iv) use the Web Site or the Web Site's services or features in violation of Time Inc.'s or any third party's intellectual property or other proprietary or legal rights; or (v) use the Web Site or the Web Site's services in violation of any applicable law.  You further agree that you shall not attempt (or encourage or support anyone else's attempt) to circumvent, reverse engineer, decrypt, or otherwise alter or interfere with the Web Site or the Web Site's services, or any content thereof, or make any unauthorized use thereof.  You agree that you shall not use the Web Site in any manner that could damage, disable, overburden, or impair the Web Site or interfere with any other party's use and enjoyment of the Web Site or any of its services. You shall not obtain or attempt to obtain any materials or information through any means not intentionally made publicly available or provided for through the Web Site. </li>
+
+          <li>	<h4>Public Forums.</h4>  Time Inc. may, from time to time, make messaging services, chat services, bulletin boards, message boards, blogs, other forums and other such services available on or through the Web Site.  In addition to any other rules or regulations that we may post in connection with a particular service, you agree that you shall not upload, post, transmit, distribute or otherwise publish through the Web Site or any service or feature made available on or through the Web Site, any materials which (i) restrict or inhibit any other user from using and enjoying the Web Site or the Web Site's services, (ii) are fraudulent, unlawful, threatening, abusive, harassing, libelous, defamatory, obscene, vulgar, offensive, pornographic, profane, sexually explicit or indecent, (iii) constitute or encourage conduct that would constitute a criminal offense, give rise to civil liability or otherwise violate any local, state, national or international law, (iv) violate, plagiarize or infringe the rights of third parties including, without limitation, copyright, trademark, trade secret, confidentiality, contract, patent, rights of privacy or publicity or any other proprietary right, (v) contain a virus, spyware, or other harmful component, (vi) contain embedded links, advertising, chain letters or pyramid schemes of any kind, or (vii) constitute or contain false or misleading indications of origin, endorsement or statements of fact.  You further agree not to impersonate any other person or entity, whether actual or fictitious, including anyone from Time Inc.  You also may not offer to buy or sell any product or service on or through your comments submitted to our forums.  You alone are responsible for the content and consequences of any of your activities.  </li>
+
+          <li>	<h4>Right to Monitor and Editorial Control.</h4>  Time Inc. reserves the right, but does not have an obligation, to monitor and/or review all materials posted to the Web Site or through the Web Site's services or features by users, and Time Inc. is not responsible for any such materials posted by users.  However, Time Inc. reserves the right at all times to disclose any information as necessary to satisfy any law, regulation or government request, or to edit, refuse to post or to remove any information or materials, in whole or in part, that in Time Inc.'s sole discretion are objectionable or in violation of this Terms of Use, Time Inc.'s policies or applicable law.  We may also impose limits on certain features of the forums or restrict your access to part or all of the forums without notice or penalty if we believe you are in breach of the guidelines set forth in this paragraph, our terms and conditions or applicable law, or for any other reason without notice or liability.</li>
+
+          <li>	<h4>Private or Sensitive Information on Public Forums.</h4>  It is important to remember that comments submitted to a forum may be recorded and stored in multiple places, both on our Web Site and elsewhere on the Internet, which are likely to be accessible for a long time and you have no control over who will read them eventually.   It is therefore important that you are careful and selective about the personal information that you disclose about yourself and others, and in particular, you should not disclose sensitive, embarrassing, proprietary or confidential information in your comments to our public forums.    </li>
+
+          <li>	<h4>Linking to the Web Site.</h4>  You agree that if you include a link from any other web site to the Web Site, such link shall open in a new browser window and shall link to the full version of an HTML formatted page of this Web Site.  You are not permitted to link directly to any image hosted on the Web Site or our services, such as using an &quot;in-line&quot; linking method to cause the image hosted by us to be displayed on another web site.  You agree not to download or use images hosted on this Web Site on another web site, for any purpose, including, without limitation, posting such images on another site.  You agree not to link from any other web site to this Web Site in any manner such that the Web Site, or any page of the Web Site, is &quot;framed,&quot; surrounded or obfuscated by any third party content, materials or branding.  We reserve all of our rights under the law to insist that any link to the Web Site be discontinued, and to revoke your right to link to the Web Site from any other web site at any time upon written notice to you.</li>
+
+          <li>	<h4>Indemnification.</h4>  You agree to defend, indemnify and hold Time Inc. and Time Inc.'s and its affiliates' directors, officers, employees and agents harmless from any and all claims, liabilities, costs and expenses, including attorneys' fees, arising in any way from your use of the Web Site, your placement or transmission of any message, content, information, software or other materials through the Web Site, or your breach or violation of the law or of these Terms and Conditions.  Time Inc. reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, and in such case, you agree to cooperate with Time Inc.'s defense of such claim.</li>
+
+          <li>	<h4>Orders for Products and Services.</h4>  We may make certain products available to visitors and registrants of the Web Site.  If you order any products, you hereby represent and warrant that you are 18 years old or older.  You agree to pay in full the prices for any purchases you make either by credit/debit card concurrent with your online order or by other payment means acceptable to Time Inc.  You agree to pay all applicable taxes.  If payment is not received by us from your credit or debit card issuer or its agents, you agree to pay all amounts due upon demand by us.  Certain products that you purchase and/or download on or through the Web Site may be subject to additional terms and conditions presented to you at the time of such purchase or download.</li>
+
+          <li>	<h4>Third Party Web Sites.</h4>  You may be able to link from the Web Site to third party web sites and third party web sites may link to the Web Site (&quot;Linked Sites&quot;).  You acknowledge and agree that we have no responsibility for the information, content, products, services, advertising, code or other materials which may or may not be provided by or through Linked Sites, even if they are owned or run by affiliates of ours.  Links to Linked Sites do not constitute an endorsement or sponsorship by us of such web sites or the information, content, products, services, advertising, code or other materials presented on or through such web sites.  The inclusion of any link to such sites on our Site does not imply Time Inc.'s endorsement, sponsorship, or recommendation of that site.  Time Inc. disclaims any liability for links (1) from another web site to this Web Site and (2) to another web site from this Web Site.  Time Inc. cannot guarantee the standards of any web site to which links are provided on this Web Site nor shall Time Inc. be held responsible for the contents of such sites, or any subsequent links.  Time Inc. does not represent or warrant that the contents of any third party web site is accurate, compliant with state or federal law, or compliant with copyright or other intellectual property laws.  Also, Time Inc. is not responsible for or any form of transmission received from any linked web site. Any reliance on the contents of a third party web site is done at your own risk and you assume all responsibilities and consequences resulting from such reliance.  </li>
+
+          <li>	<h4>Copyright Agent.</h4> We respect the intellectual property rights of others, and require that the people who use the Web Site, or the services or features made available on or through the Web Site, do the same.  If you believe that your work has been copied in a way that constitutes copyright infringement, please forward the following information to Time Inc.'s Copyright Agent, designated as such pursuant to the Digital Millennium Copyright Act, 17 U.S.C. &sect; 512(c)(2), named below: <br /><br />
+
+          <ul type="disc">
+          <li>Your address, telephone number, and email address; </li>
+          <li>A description of the copyrighted work that you claim has been infringed; </li>
+          <li>A description of where the alleged infringing material is located; </li>
+          <li>A statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; </li>
+          <li>An electronic or physical signature of the person authorized to act on behalf of the owner of the copyright interest; and </li>
+          <li>A statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright owner or are authorized to act on the copyright owner's behalf. </li>
+          </ul>
+
+          <p>Copyright Agent:<br />
+          Irina Mayakova<br />
+          Time Inc.<br />
+          voice: 212-522-5865<br />
+          fax: 212-467-3320<br />
+          e-mail: <a href="mailto:copyrightdmca@timeinc.com">copyrightdmca@timeinc.com</a></p>
+
+          <p>For <strong>Customer Service</strong> do not contact the Copyright Agent, please contact: <br />
+          Time Customer Service <br />
+          3000 University Center Drive <br />
+          Tampa, Florida 33612-6408 <br />
+          phone:1-866-482-2945</p>
+          </li>
+
+          <li>	<h4>DISCLAIMER OF WARRANTIES.</h4>  THE WEB SITE, INCLUDING, WITHOUT LIMITATION, ALL SERVICES, CONTENT, FUNCTIONS AND MATERIALS PROVIDED THROUGH THE WEB SITE, ARE PROVIDED &quot;AS IS,&quot; &quot;AS AVAILABLE,&quot; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, WITHOUT LIMITATION, ANY WARRANTY FOR INFORMATION, DATA, DATA PROCESSING SERVICES, UPTIME OR UNINTERRUPTED ACCESS, ANY WARRANTIES CONCERNING THE AVAILABILITY, PLAYABILITY, DISPLAYABILITY, ACCURACY, PRECISION, CORRECTNESS, THOROUGHNESS, COMPLETENESS, USEFULNESS, OR CONTENT OF INFORMATION, AND ANY WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, AND WE HEREBY DISCLAIM ANY AND ALL SUCH WARRANTIES, EXPRESS AND IMPLIED.  WE DO NOT WARRANT THAT THE WEB SITE OR THE SERVICES, CONTENT, FUNCTIONS OR MATERIALS PROVIDED THROUGH THE WEB SITE WILL BE TIMELY, SECURE, UNINTERRUPTED OR ERROR FREE, OR THAT DEFECTS WILL BE CORRECTED.  WE MAKE NO WARRANTY THAT THE WEB SITE OR THE PROVIDED SERVICES WILL MEET USERS' REQUIREMENTS.  NO ADVICE, RESULTS OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM US OR THROUGH THE WEB SITE SHALL CREATE ANY WARRANTY NOT EXPRESSLY MADE HEREIN.  TIME INC. ALSO ASSUMES NO RESPONSIBILITY, AND SHALL NOT BE LIABLE FOR, ANY DAMAGES TO, OR VIRUSES THAT MAY INFECT, YOUR EQUIPMENT ON ACCOUNT OF YOUR ACCESS TO, USE OF, OR BROWSING IN THE WEB SITE OR YOUR DOWNLOADING OF ANY MATERIALS, DATA, TEXT, IMAGES, VIDEO CONTENT, OR AUDIO CONTENT FROM THE WEB SITE.  IF YOU ARE DISSATISFIED WITH THE WEB SITE, YOUR SOLE REMEDY IS TO DISCONTINUE USING THE WEB SITE.
+
+          <p>WE TRY TO ENSURE THAT THE INFORMATION POSTED ON THE WEB SITE IS CORRECT AND UP-TO-DATE. WE RESERVE THE RIGHT TO CHANGE OR MAKE CORRECTIONS TO ANY OF THE INFORMATION PROVIDED ON THE WEB SITE AT ANY TIME AND WITHOUT ANY PRIOR WARNING.  TIME INC. NEITHER ENDORSES NOR IS RESPONSIBLE FOR THE ACCURACY OR RELIABILITY OF ANY OPINION, ADVICE OR STATEMENT ON THE WEB SITE, NOR FOR ANY OFFENSIVE, DEFAMATORY, OBSCENE, INDECENT, UNLAWFUL OR INFRINGING POSTING MADE THEREON BY ANYONE OTHER THAN AUTHORIZED TIME INC. EMPLOYEE SPOKESPERSONS WHILE ACTING IN THEIR OFFICIAL CAPACITIES (INCLUDING, WITHOUT LIMITATION, OTHER USERS OF THE WEB SITE).  IT IS YOUR RESPONSIBILITY TO EVALUATE THE ACCURACY, COMPLETENESS OR USEFULNESS OF ANY INFORMATION, OPINION, ADVICE OR OTHER CONTENT AVAILABLE THROUGH THE WEB SITE. PLEASE SEEK THE ADVICE OF PROFESSIONALS, AS APPROPRIATE, REGARDING THE EVALUATION OF ANY SPECIFIC INFORMATION, OPINION, ADVICE OR OTHER CONTENT, INCLUDING BUT NOT LIMITED TO FINANCIAL, HEALTH, OR LIFESTYLE INFORMATION, OPINION, ADVICE OR OTHER CONTENT.</p>
+
+          <p>PRIOR TO THE EXECUTION OF A PURCHASE OR SALE OF ANY SECURITY OR INVESTMENT, YOU ARE ADVISED TO CONSULT WITH YOUR BROKER OR OTHER FINANCIAL ADVISOR TO VERIFY PRICING AND OTHER INFORMATION. WE SHALL HAVE NO LIABILITY FOR INVESTMENT DECISIONS BASED UPON, OR THE RESULTS OBTAINED FROM, THE CONTENT PROVIDED HEREIN. NOTHING CONTAINED IN THE WEB SITE SHALL BE CONSTRUED AS INVESTMENT ADVICE. TIME INC. IS NOT A REGISTERED BROKER-DEALER OR INVESTMENT ADVISOR AND DOES NOT GIVE INVESTMENT ADVICE OR RECOMMEND ONE PRODUCT OVER ANOTHER.</p>
+
+          WITHOUT LIMITATION OF THE ABOVE IN THIS SECTION, TIME INC. AND ITS AFFILIATES, SUPPLIERS AND LICENSORS MAKE NO WARRANTIES OR REPRESENTATIONS REGARDING ANY PRODUCTS OR SERVICES ORDERED OR PROVIDED VIA THE WEB SITE, AND HEREBY DISCLAIM, AND YOU HEREBY WAIVE, ANY AND ALL WARRANTIES AND REPRESENTATIONS MADE IN PRODUCT OR SERVICES LITERATURE, FREQUENTLY ASKED QUESTIONS DOCUMENTS AND OTHERWISE ON THE WEB SITE OR IN CORRESPONDENCE WITH TIME INC. OR ITS AGENTS.  ANY PRODUCTS AND SERVICES ORDERED OR PROVIDED VIA THE WEB SITE ARE PROVIDED BY TIME INC. &quot;AS IS,&quot; EXCEPT TO THE EXTENT, IF AT ALL, OTHERWISE SET FORTH IN A LICENSE OR SALE AGREEMENT SEPARATELY ENTERED INTO IN WRITING BETWEEN YOU AND TIME INC. OR ITS LICENSOR OR SUPPLIER.</li>
+
+          <li>	<h4>LIMITATION OF LIABILITY.</h4>  IN NO EVENT, INCLUDING BUT NOT LIMITED TO NEGLIGENCE, SHALL TIME INC., OR ANY OF ITS DIRECTORS, OFFICERS, EMPLOYEES, AGENTS OR CONTENT OR SERVICE PROVIDERS (COLLECTIVELY, THE &quot;PROTECTED ENTITIES&quot;) BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY OR PUNITIVE DAMAGES ARISING FROM, OR DIRECTLY OR INDIRECTLY RELATED TO, THE USE OF, OR THE INABILITY TO USE, THE WEB SITE OR THE CONTENT, MATERIALS AND FUNCTIONS RELATED THERETO, YOUR PROVISION OF INFORMATION VIA THE WEB SITE, LOST BUSINESS OR LOST SALES, EVEN IF SUCH PROTECTED ENTITY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES SO SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO CERTAIN USERS.  IN NO EVENT SHALL THE PROTECTED ENTITIES BE LIABLE FOR OR IN CONNECTION WITH ANY CONTENT POSTED, TRANSMITTED, EXCHANGED OR RECEIVED BY OR ON BEHALF OF ANY USER OR OTHER PERSON ON OR THROUGH THE WEB SITE.  IN NO EVENT SHALL THE TOTAL AGGREGATE LIABILITY OF THE PROTECTED ENTITIES TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION (WHETHER IN CONTRACT OR TORT, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE OR OTHERWISE) ARISING FROM THE TERMS AND CONDITIONS OR YOUR USE OF THE WEB SITE EXCEED, IN THE AGGREGATE, THE AMOUNT, IF ANY, PAID BY YOU TO TIME INC. FOR YOUR USE OF THE WEB SITE OR PURCHASE OF PRODUCTS VIA THE WEB SITE.</li>
+
+          <li>	<h4>Photosensitive Seizures.</h4>  A very small percentage of people may experience a seizure when exposed to certain visual images, such as flashing lights or patterns that may appear in video games or other electronic or online content.  Even people who have no history of seizures or epilepsy may have an undiagnosed condition that can cause these &quot;photosensitive epileptic seizures&quot; while watching video games or other electronic content.  These seizures have a variety of symptoms, including lightheadedness, disorientation, confusion, momentary loss of awareness, eye or face twitching, altered vision or jerking or shaking of arms or legs.  If you experience any of the foregoing symptoms, or if you or your family has a history of seizures or epilepsy, you should immediately stop using the Web Site and consult a doctor.</li>
+
+          <li>	<h4>Applicable Laws.</h4> We control and operate the Web Site from our offices in the United States of America.  We do not represent that materials on the Web Site are appropriate or available for use in other locations.  Persons who choose to access the Web Site from other locations do so on their own initiative, and are responsible for compliance with local laws, if and to the extent local laws are applicable.  All parties to these terms and conditions waive their respective rights to a trial by jury.  </li>
+
+          <li>	<h4>Termination.</h4>  Time Inc. may terminate, change, suspend or discontinue any aspect of the Web Site or the Web Site's services at any time.  Time Inc. may restrict, suspend or terminate your access to the Web Site and/or its services if we believe you are in breach of our terms and conditions or applicable law, or for any other reason without notice or liability.  Time Inc. maintains a policy that provides for the termination in appropriate circumstances of the Web Site use privileges of users who are repeat infringers of intellectual property rights. </li>
+
+          <li>	<h4>Changes to Terms of Use.</h4>  Time Inc. reserves the right, at its sole discretion, to change, modify, add or remove any portion of the Terms and Conditions, in whole or in part, at any time.  Changes in the Terms and Conditions will be effective when posted.  Your continued use of the Web Site and/or the services made available on or through the Web Site after any changes to the Terms and Conditions are posted will be considered acceptance of those changes. </li>
+
+          <li>	<h4>Miscellaneous.</h4>  The Terms and Conditions, and the relationship between you and us, shall be governed by the laws of the State of New York, United States of America, without regard to conflict of law provisions.  You agree that any cause of action that may arise under the Terms and Conditions shall be commenced and be heard in the appropriate court in the State of New York, County of New York, United States of America.  You agree to submit to the personal and exclusive jurisdiction of the courts located within New York County in the State of New York.  Our failure to exercise or enforce any right or provision of the Terms and Conditions shall not constitute a waiver of such right or provision.  If any provision of the Terms and Conditions is found by a court of competent jurisdiction to be invalid, the parties nevertheless agree that the court should endeavor to give effect to the parties' intentions as reflected in the provision, and the other provisions of the Terms and Conditions remain in full force and effect.</li>
+
+          <li>	<h4>Supplemental Terms.</h4>
+          <br /><br />Getty Images Notice:<br /><br />
+          Getty Images still images and visual representations (including, without limitation, from Getty Images wholly-owned Sport, MLB, NHLI, AFP Sport, and Bongarts Sports) may not be republished, retransmitted, reproduced, downloaded or otherwise used, except for downloading for personal, non-commercial use. </li>
+          </ol>
+          <p>These Terms and Conditions were revised 5/21/2008.</p>
+
+          <input id="tosNot" class="loginButton" type="button" value="Naah..">
+          <input id="tosYes" class="loginButton" type="button" value="I SHIP IT">
+        </div>
+
+      </div>
+
+  <svg version="1.1" id="header" style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="-36.5 60 468 64" overflow="visible" enable-background="new -36.5 34.25 468 120" xml:space="preserve"  zoomAndPan="disable">
+  <g id="LogoGroup" zoomAndPan="disable">
+    <g>
+  		<rect x="104.026" y="71.343" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="181.808" height="45.429"/>
+  		<path fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" d="M245.1,73.424h-3.365l-13.59,34.513h4.047l4.232-10.95h13.783
+  			l4.279,10.95h4.141L245.1,73.424z M237.828,93.398l4.053-10.644c0.643-1.802,1.131-3.456,1.482-4.959
+  			c0.553,1.958,1.08,3.611,1.6,4.962l3.998,10.64H237.828z"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="211.932,73.571 207.932,73.571 207.932,107.937
+  			227.094,107.937 227.094,104.324 211.932,104.324 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="147.426,73.564 142.7,73.564 127.101,90.602
+  			127.101,73.576 123.103,73.576 123.103,107.939 127.101,107.939 127.101,94.465 130.701,91.27 143.243,107.937 147.939,107.937
+  			133.603,88.505 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="189.345,73.571 185.345,73.571 185.345,107.937
+  			204.51,107.937 204.51,104.324 189.345,104.324 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="147.941,107.937 147.939,107.937 147.944,107.943 		"/>
+  		<path fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" d="M164.369,73.016c-5.086,0-9.006,1.535-11.766,4.621
+  			c-2.755,3.087-4.137,7.417-4.137,13.008c0,5.64,1.377,10.014,4.125,13.109c2.749,3.09,6.655,4.646,11.719,4.646
+  			c4.946,0,8.822-1.575,11.602-4.729c2.781-3.152,4.171-7.479,4.171-12.976l0.01,0.004c0-5.514-1.381-9.839-4.154-12.984
+  			C173.163,74.588,169.3,73.016,164.369,73.016z M172.95,101.303c-1.949,2.399-4.822,3.604-8.626,3.604
+  			c-3.779,0-6.671-1.204-8.652-3.611c-1.98-2.406-2.974-5.94-2.974-10.6l0.016-0.012c0-4.589,0.987-8.084,2.97-10.491
+  			c1.983-2.408,4.88-3.611,8.686-3.611c3.794,0,6.656,1.196,8.59,3.592c1.933,2.388,2.902,5.894,2.902,10.522
+  			C175.861,95.363,174.892,98.902,172.95,101.303z"/>
+  		<path fill="#02343F" d="M258.332,116.985c-1.477,0-2.633-0.209-3.48-0.634v-3.406c1.115,0.314,2.277,0.47,3.48,0.47
+  			c1.551,0,2.734-0.47,3.541-1.406c0.803-0.94,1.203-2.291,1.203-4.065V73.571h3.998v34.039c0,2.978-0.75,5.279-2.252,6.918
+  			C263.316,116.168,261.154,116.985,258.332,116.985z"/>
+  		<path fill="#FFFFFF" d="M227.094,107.939h-2.5l1.436-3.644h1.086"/>
+  		<path fill="#FFFFFF" d="M226.426,102.873c0,0-1.152,5.529-1.543,5.794c-0.389,0.27,1.711,2.914,2.609-0.291
+  			c0.902-3.203,2.318-5.108,1.105-5.301c-1.215-0.194-2.176-0.207-2.176-0.207L226.426,102.873z"/>
+  	</g>
+  	<rect x="-80.5" y="-8.75" fill="none" width="90" height="201"/>
+  </g>
+  <g id="messages">
+	<rect id="THISISMSGBG" x="335.167" y="77.25" fill="#FAFAFA" width="75.333" height="34"/>
+  	<g>
+  			<path id="XMLID_4_" fill="none" stroke="#3D4959" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+  			M387.321,108.61h20.96l-9.372-9.373c0,0,0-0.998,0-5.325c0-4.328-4.089-4.088-4.089-4.088s-23.015,0-26.943,0
+  			s-4.089,4.088-4.089,4.088s0,6.341,0,10.649c0,4.308,4.089,4.088,4.089,4.088l40.425-0.039l-9.373-9.772"/>
+
+  			<path id="XMLID_3_" fill="none" stroke="#3D4959" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+  			M359.043,98.479h-20.961l9.374-9.373c0,0,0-0.997,0-5.325s4.088-4.088,4.088-4.088s23.014,0,26.943,0
+  			c3.928,0,4.107,4.088,4.107,4.088s0,6.342,0,10.65c0,4.307-4.088,4.088-4.088,4.088l-40.425-0.04l9.374-9.771"/>
+  	</g>
+  </g>
+  <g id="notifications">
+    <style type="text/css">
+    #pulsar{
+      opacity: 0.6;
+      stroke-dasharray: 175;
+      stroke-dashoffset: 350;
+      -webkit-animation: draw 1.4s linear;
+      -moz-animation: draw 1.4s linear;
+      animation: draw 1.4s linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-moz-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    </style>
+  	<rect id="THISISPULSARBG" x="-20.167" y="80.583" fill="#FAFAFA" width="101.333" height="36.333"/>
+  	<path fill="none" fill="rgba(100,100,100,0.1)"  d="M-20.623,94.051h46.772c0.874-3.742,1.622-3.929,2.245-0.561c0.624,3.368,0.936,3.866,0.936,1.497
+  		c0-2.37,0.188-2.807,0.562-1.31c0.374,1.497,0.562,1.746,0.562,0.748c0-0.998,0.374,1.185,1.122,6.548
+  		c0.749,5.363,1.185,1.621,1.31-11.225c0.125-12.847,0.375-9.105,0.748,11.225c0.375,20.33,0.811,19.084,1.311-3.742
+  		c0.748-34.237,0.373-2.057,1.871-1.87c1.496,0.187,0.187,0.187,1.496-1.871c0.873-1.372,1.123-0.874,0.748,1.497
+  		c1.123,0.748,1.497-1.123,1.871-3.181c0.375-2.058,0.375,1.871,1.684,2.058h39.289"/>
+  	<path id="pulsar" d="M-20.623,94.051h46.772c0.874-3.742,1.622-3.929,2.245-0.561c0.624,3.368,0.936,3.866,0.936,1.497
+  		c0-2.37,0.188-2.807,0.562-1.31c0.374,1.497,0.562,1.746,0.562,0.748c0-0.998,0.374,1.185,1.122,6.548
+  		c0.749,5.363,1.185,1.621,1.31-11.225c0.125-12.847,0.375-9.105,0.748,11.225c0.375,20.33,0.811,19.084,1.311-3.742
+  		c0.748-34.237,0.373-2.057,1.871-1.87c1.496,0.187,0.187,0.187,1.496-1.871c0.873-1.372,1.123-0.874,0.748,1.497
+  		c1.123,0.748,1.497-1.123,1.871-3.181c0.375-2.058,0.375,1.871,1.684,2.058h39.289"/>
+  </g>
+  </svg>
+
+<!--
+      <ul id="header">
+        <li id="notifications" class="hC">
+          <svg version="1.1" id="heartbeat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="112 30 360 160" style="enable-background:new 0 0 20 20;" xml:space="preserve"  zoomAndPan="disable">
+              <path stroke="rgba(15,0,0,0.1)" fill="none" stroke-width="1.5" stroke-linejoin="round"
+        			d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+              <path id="pulsar" stroke="rgba(60,72,88,1)" fill="none" stroke-width="2.5" stroke-linejoin="round"
+        	    d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+            </svg>
+        </li>
+        <li id="logo" class="hC"> </li>
+        <li id="messages" class="hC"> </li>
+      </ul>
+-->
+        <div id="picViewerFull"> </div>
+        <div id = "mainContainer">
+
+          <ul id="mainNav">
+             <li><a href="#feed" id="feedLink"></a></li>
+             <li><a href="#sendPicture" id="sendPicLink"></a></li>
+             <li><a href="#profile" id="profLink"></a></li>
+          </ul>
+
+         <div id = "feed" class="bottomMenu">
+          <div id="searchF">
+            <input id="searchQuery" class="feedSearch" type="text" placeholder="Search anything">
+            <input id="fsButton" class="fsButton" type="button" />
+          </div>
+          <div id="searchRes" style="display:none;"> </div>
+          <div id="vibeView"></div>
+          <div id="picViewer"> </div>
+          <div id="feedRes" ></div>
+         </div>
+
+         <div id = "sendPicture" class="bottomMenu">
+
+           <div id="otherOptions" style="display:none">
+
+             <div id="selfieMode"> <p>SELFIE</p> </div>
+             <div id="videoMode"> <p> VIDEO </p> </div>
+             <div id="galleryMode"> <p> BROWSE</p></div>
+
+           </div>
+
+
+           <div id="takePicture">
+                <div id="editorHelper">
+                  <div class="questionMark" id="questionIcon"> </div>
+                  <div class="calibrateIcon" id="calibrationTool"> </div>
+                  <div id="helpHolder">
+                    <p> Hey! This is the Editor. </p>
+                    <p> You can make 2 cuts, </p>
+                    <p> each cut must start before, and after the photo. </p>
+                    <p> The part that does not contain the center point gets discarded. </p>
+                    <p> Hope you enjoy this, @spacewalkingninja :) ! </p>
+                   </div>
+                  <div id="calibrateHolder">
+
+                    <div class="calibrationValue">0</div>
+                    <input type="range" id="calibrationRanger" min="-0.1" max="0.1" step="0.001" value="0">
+                    <p id="calibrateMsg"> This is not a toy! </p>
+                    <p> Higher values make your cuts go higher. <br/>
+                    <span style="font-size:0.9rem; line-height:0.9rem;"> If you're a developer I've wrote some things about this on the about page! </span>
+                    </p>
+                  </div>
+                   <div id="leNextStepper">
+                     <div id="detailStep" class="arrow-a arrow--right"></div>
+                   </div>
+
+                </div>
+                <div id="detailsWindow">
+                  <textarea id="uploadPicDesc" placeholder="Description"></textarea>
+                   <div class="detailsOption">
+                     <input type="checkbox" id="feedCheck">
+                     <label for="feedCheck"> Show in the feed </label>
+                   </div>
+                   <div class="detailsOption">
+                     <input type="checkbox" id="fullImgCheck">
+                     <label for="fullImgCheck"> Show entire image page </label>
+                   </div>
+             <!--
+             <div class="detailsOption">
+               <input type="checkbox" id="fbCheck">
+               <label for="fbCheck"> Share on Facebook </label>
+             </div> -->
+
+             <div id="timerContainer">
+             <div class="timer">
+                 <div class="timer">
+                     <div class="timer">
+                         <div class="timer">
+                             <div class="timer">
+                                 <div class="timer">
+                                     <div class="timer">
+                                         <div class="timer">
+                                             <div class="timer">
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+           </div>
+
+           <div id="uploadBHolder">
+           <div class="round-button">
+              <div class="round-button-circle" id="uploadMyPic">
+                <p> The Button </p>
+              </div>
+            </div>
+          </div>
+
+           </div>
+
+
+           <div id="editorHolder">
+             <svg id="mySvg"> </svg>
+           </div>
+
+           <div id="debuDiv"> </div>
+           </div>
+
+
+         </div>
+
+         <div id = "profile" class="bottomMenu">
+
+
+           <ul id="profileInfo">
+             <li id="profileFollowers"> 24k </li>
+             <li id="profileName"> @JohnDoe </li>
+             <li id="profileFollowing"> 15k </li>
+           </ul>
+           <div id="profilePicDiv">
+              <div class='crop' id="whereuputurppic"></div>
+           </div>
+           <svg id="profileSVG"> </svg>
+
+           <div id="helpingDiv" style="display:none"> </div>
+
+         </div>
+
+      </div>
+
+      <div id = "msg" style="display:none">
+         <div class="contactBox" id="msgresholder">
+
+      </div>
+
+      <div id="chat">
+        <div id="chatbox" style="display:none">
+
+
+          <div id="theChatThing" style="margin: 4.2rem auto !important;" class="feedCommentsHolder">
+
+          </div>
+
+
+
+        </div>
+        <div id="writeBox">
+
+          <div id="chatForm" class="feedCommentForm" style="display:block !important;">
+            <input id="chatInput" class="feedCommentInput" data-sendTo="0" type="text" placeholder="You can say something!">
+            <input id="chatButton" class="feedCommentBtn" type="button" value="> send <">
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div id = "vibes" style="display:none">
+      </div>
+
+    <!--INCLUDE: cordova-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--Custom code starts here-->
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
+    <script type="text/javascript" src="js/jquery.timeago.js"></script>
+    <script type="text/javascript" src="js/sha3.min.js"></script>
+    <!--INCLUDE: index to detect deviceready-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--Start app-->
+    <script type="text/javascript">
+
+        app.initialize();
+
+        $(function() {
+          $( "#mainContainer" ).tabs();
+        });
+
+    </script>
+
+</body> 
+
+</html>

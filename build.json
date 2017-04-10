@@ -1,0 +1,11 @@
+{
+ "android": {
+     "release": {
+         "keystore":"c:\\my-release-key.keystore",
+         "storePassword":"Sla$hinGoatHed3",
+         "alias":"kristianAtanasov",
+         "password":"Sla$hinGoatHed3",
+         "keystoreType":""
+       }
+   }
+}

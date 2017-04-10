@@ -1,0 +1,1555 @@
+﻿<!DOCTYPE html>
+<!--
+Aloha, before all, i am very thankfull to any & every one who in||&&directly helped to make this pile of nights come to life
+friends, stackoverflowers, codepeners <3
+to anyone who really wants to find you, google, search, read.
+We all developers know how to google, and that is the truth.
+As I started rewriting the code, I started commenting more, and
+also including references to where I got the code from.
+Better habbits, & a better being I guess.
+Of course, I might've forgot some times, so please do excuse me || #sueAnotherStartUp .
+and...
+signing just a bit after 4:20,
+4:52am 5/1/17 Kristian Atanasov
+
+ps, to anyone reading this, start watching if you dont, vox, tedtalks, veritassium, scishow, all those great yt's, and if you know something great, share. i420it
+pps:omg loooooooook here -v HAHAHHAHAHAHAHAHHA proof this shit's #since2016 OMG <3 Kollaj FTW <3
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+<!--    <meta http-equiv="Content-Security-Policy" content="default-src * localhost 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 192.168.1.117 'self'" /> -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * localhost kollaj.net 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src * kollaj.net" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.css" /> -->
+    <title>Kollaj</title>
+</head>
+
+<body>
+
+  <div id="abt">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.228 117.552" overflow="visible" zoomAndPan="disable"><path fill="none" d="M0 0h468.23v117H0z"/><path fill="#02343F" d="M113.1 94.24H101L68.7 51.32l-9.27 8.23v34.7h-10.3V5.75h10.3V49.6L99.6 5.72h12.17L76.17 44.2l36.94 50.06zm82.78-44.4c0 14.16-3.58 25.3-10.74 33.42S168 95.43 155.26 95.43c-13.04 0-23.1-4-30.18-11.96-7.08-7.97-10.63-19.23-10.63-33.76 0-14.4 3.56-25.55 10.66-33.5s17.2-11.9 30.3-11.9c12.7 0 22.65 4.05 29.8 12.1 7.14 8.1 10.7 19.24 10.7 33.44zm-70.53 0c0 12 2.56 21.1 7.66 27.3s12.55 9.3 22.28 9.3c9.8 0 17.2-3.1 22.22-9.28 5-6.18 7.5-15.3 7.5-27.32 0-11.92-2.5-20.95-7.48-27.1-4.98-6.17-12.35-9.25-22.12-9.25-9.8 0-17.26 3.1-22.37 9.3s-7.65 15.2-7.65 27.02zm84.08 44.4V5.74h10.3v79.2h39.06v9.3h-49.4zm58.17 0V5.74h10.3v79.2h39.05v9.3H267.6zm119.9 0l-11.02-28.2h-35.5l-10.9 28.2h-10.42l35-88.88h8.67l34.83 88.88H387.5zM373.27 56.8l-10.3-27.4c-1.34-3.48-2.7-7.74-4.12-12.78-.9 3.87-2.16 8.13-3.82 12.77L344.6 56.8h28.67z"/><path fill="#02343F" d="M397.4 117.55c-3.8 0-6.78-.54-8.96-1.63v-8.77c2.87.8 5.86 1.2 8.96 1.2 4 0 7.04-1.2 9.12-3.62 2.07-2.42 3.1-5.9 3.1-10.47V5.74h10.3V93.4c0 7.67-1.93 13.6-5.8 17.82-3.88 4.22-9.45 6.33-16.72 6.33z"/><path fill="#FFF" d="M316.95 94.25h-6.44l3.7-9.38h2.8"/><path fill="#FFF" d="M315.23 81.2s-2.97 14.24-3.97 14.93 4.4 7.5 6.72-.75 5.97-13.16 2.84-13.66-5.6-.53-5.6-.53z"/></svg>
+
+  <h1> Thank you for using. </h1>
+  <h2> Joking, thanks for seeing the ads </h2>
+  <h3> Joking Joking, thanks for both! Really! </h2>
+
+  <p>
+    Now with a serious, corporative, language.
+  </p>
+  <p>
+    Kollaj is the work of Kristian Krasimirov Atanasov. Put together with some artistic mind, lots of stacks overflowing, clearly - I had code, I had a pen, BAM! I had the help of codepen. Cofee@420, and <i>a little help from my friends</i>. I shall name them, in no order of relevance: <br/> -Beatriz França, <br/> -João Monteiro,<br/> -João Silva,<br/> -Carlos Silva,<br/> -Filipe Nunes,<br/> -Pedro Ferreira, ''''</p>
+
+  <p>
+    I probably would like the following bolded out. <br/>
+    <b> I am not a programmer. I am an artist, a self made man. </b>
+    This work is nothing more than a proof of concept service TRYING to stay alive. A startup. And a little buggy, slow app. but <br/>
+    <b>DON'T PANIC,<br/>
+    WE WILL MAKE IT BETTER, JUST KEEP USING IT!<br/> </b>
+    I made Kollaj with the intention to wake a more artistically oriented mindset breaking nowadays's ''in the box'' streamlined fashion of content sharing.
+   <br/>
+    That is, all content we shared untill now was made to fit a certain layout, order. Not only in design terms, but also as a piece.<i> Kollaj aims to break this rule</i>, it is a tool that allows you, and everyone, to gather the important pieces, and conjugate them into something unique. Be it to make a piece of art, to share how your day or vacations followed, or keep a kollaj with the latest news. <br/>
+    Allowing you to cut photos (and later on videos), is a way to make your feed personal, and pleasant. The geometric patterns you will use in your Kollaj will form an unique and natural feel of your feed.<br/> <br/>And YES! Cutting is really easy, the Editor, Ed for short is about a couple of months worth of work, and he came from Coffeelandia. Ed is the core of Kollaj. He had various shapes, and forms, but he finally materialized in the island of stability.<br/>
+    Both in terms of feel, and being stable enough to release. <br/>
+    His final accounted shape can be found in the source code of Kollaj and the base model @ my Codepen account on codepen.io/spacewalkingninja. <br/>
+    Ed works with snapsvg under the hood, and allows you to make two consecutive cuts to the photo. Not more, not less.<br/> The side of the photo that gets deleted is the smaller, NOT containing the center point.. yeah that's why it appears when you cut. <br/>
+    This is about the point where I mention <i> Ed's worst nightmare</i>. New Phones on Kollaj. <br/>
+    Not that he has some kind of problem with them or something, it's just that as the feed os the user expands, I think this is HIGHLY LIKELY to be due to either CSS Pixels, to Pixels, and about I don't know what other kinds of conversion and <i>voodoo</i>, values get distorted to about 0.01-0.09 % over a greater distance from the start when saving the photo. Like when saving a photo at 6 000 pixels from the start, this picture might get saved @what is visually 6090px.<br/>This is why there is the calibration tool at your disposal, when things start going wrong. Usually the blunt test tells you how well your phone is calibrated. (Cut a blunt, and save it over the mouth of someone on a picture far down your Kollaj, if the blunt stays where you put it, EVERYTHING IS FINE! If not satisfied, calibrate, higher calibration means photos will appear HIGHER on your Kollaj.) <br/>
+    This is one of my most prioritized bugs to be resolved. Any ideas are appreaciated and in the meantime, as soon as I have time to really fix this, I shall :) ! <br/>
+
+    Kollaj is not based about likes or dislikes, Kollaj is all about vibes. Your photo can be somewhere high or low on the rainbow. The meaning, if such exists, you attribute on your own.<br/>
+    Only you are allowed to see the medium color of your photos. You can't see other users' photos color, or <i>vice-versa</i>.
+  </p>
+  <p> Clearly, I hope you enjoy Kollaj, even as it is today. In the short to long term, I hope we can make Kollaj a better service, improving not only speeds and user experience, but adding relevant new features as the user base grows, and we see what else can we innovate.
+
+  </div>
+
+  <div class="modal-frame">
+    <div class="modal">
+  		    <div class="modal-inset">
+        			<div class="button close"><div class="close-button"> </div></div>
+              <div id="deepMenu">
+
+                <div id="deepMenuChooser">
+                  <input id="setMyAvatar" class="loginButton" type="button" value="AVATAR">
+                  <input id="setMyName" class="loginButton" type="button" value="REAL NAME">
+                  <input id="setMyBio" class="loginButton" type="button" value="BIO">
+                  <input id="setMyPass" class="loginButton" type="button" value="PASSWORD">
+                  <input id="setMyEmail" class="loginButton" type="button" value="EMAIL">
+                  <p style="color:white; text-align:center;">
+                    This is where you set your settings.<br/><br/>
+                    Or change them at will.<br/><br/>
+                    It's all really up to you.<br/><br/>
+                    To be honest, you can do nothing.
+                  </p>
+                  <input class="loginButton" type="button" value="NOTHING">
+                </div>
+
+                <div id="myNameSet">
+                  <input id="myNameIs" class="loginInput" type="text" placeholder="Your name">
+                  <input id="myNameSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+                <div id="myBioSet">
+                  <p style="color:white; text-align:center; word-wrap: break-word; margin-top:3rem; font-size:1.2rem; line-height:1.3rem" id="currentBio"></p>
+                  <input id="myBioIs" class="loginInput" type="text" placeholder="Your bio">
+                  <input id="myBioSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+                <div id="myPassSet">
+                  <input id="myOldPass" class="loginInput" type="password" placeholder="old password">
+                  <input id="myNewPass" class="loginInput" type="password" placeholder="new password">
+
+                  <input id="myPassSaver" class="loginButton" type="button" value=">SAVE<">
+
+                </div>
+
+                <div id="myEmailSet">
+                  <input id="myEmailIs" class="loginInput" type="text" placeholder="Your E-Mail">
+                  <input id="myEmailSaver" class="loginButton" type="button" value=">SAVE<">
+                </div>
+
+              </div>
+
+              <div class="modal-body" id="dasModal">
+  				        <!--<h3 class="leUsernam">Such Modal, Much Animate!</h3>
+          				<p>Nothing groundbreaking, but I hope you enjoyed <br /> the physics for the open/close animation =).</p>
+          <p class="ps">**I know the SASS is a bit messy, I did this on the fly and for fun <br /> and w.e. I DO WHAT I WANT!!</p> -->
+        			</div>
+              <div class="modal-body" style="display:none" id="infiniteScrollModal">
+                <div id='profilePicDiv' class="modalAddition">
+                  <div class='crop' id='ppicindaModal'></div>
+                </div>
+                <div id='repeat'>
+                  <div class='section' id='section-one'>
+                    <h1>Profile Pic</h1>
+                  </div>
+                  <div class='section' id='section-two'>
+                    <h1>Profile Description</h1>
+                  </div>
+                  <div class='section' id='section-three'>
+                    <h1>Password and Email</h1>
+                  </div>
+                  <div class='section' id='section-four'>
+                    <h1>Sign out!</h1>
+                  </div>
+                  <div class='section' style='background: #e61249;' id='last'>
+                    <h1>About Kollaj</h1>
+                  </div>
+                </div>
+              </div>
+
+              <div id="whoAmIFollowing">
+
+              </div>
+              <div id="whoAreMyFollowers">
+
+              </div>
+
+          </div>
+    	</div>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <div id="thatThing">
+
+      <div class="mood-list-wrapper">
+
+        <div class="mood-picker" id="picker">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="169" height="132" viewBox="0 0 169 132" style="enable-background:new 0 0 410.23 410.23;" xml:space="preserve" overflow="visible" zoomAndPan="disable">
+            <path fill="rgba(0,0,0,0.85)" d="M134.039,178.521c0,5.609-4.547,10.156-10.155,10.156H42.64c-5.609,0-10.156-4.547-10.156-10.156V-55.056
+            	c0-5.609,4.547-10.155,10.156-10.155h81.244c5.608,0,10.155,4.546,10.155,10.155V178.521z"/>
+
+          		<path fill="#FFFFFF" d="M121.287,41.9c-1.254-3.575-3.449-6.793-6.356-9.32c-2.911-2.521-6.413-4.245-10.121-4.979
+          			c-1.402-0.276-2.838-0.415-4.277-0.415c-4.194,0-8.27,1.187-11.793,3.427c-2.123,1.354-3.983,3.044-5.518,5.004
+          			c-1.535-1.953-3.396-3.645-5.516-4.991c-3.52-2.241-7.596-3.428-11.787-3.428c-3.492,0-6.997,0.868-10.134,2.497
+          			c-3.135,1.633-5.854,4.001-7.865,6.861c-2.055,2.924-3.31,6.205-3.721,9.741c-0.364,3.097-0.083,6.422,0.833,9.881
+          			c1.813,6.856,5.828,13.112,8.88,17.154c6.629,8.775,15.745,16.75,27.867,24.365l1.449,0.906l1.449-0.906
+          			c14.91-9.371,25.319-19.26,31.817-30.239c3.737-6.313,5.685-11.936,5.952-17.19C122.596,47.338,122.207,44.522,121.287,41.9z
+          			 M117.008,49.988c-0.22,4.353-1.921,9.166-5.199,14.7c-5.841,9.863-15.199,18.865-28.581,27.474
+          			C72.395,85.191,64.217,77.947,58.255,70.05c-2.755-3.65-6.374-9.262-7.96-15.262c-0.74-2.796-0.973-5.438-0.689-7.858
+          			c0.307-2.63,1.242-5.062,2.774-7.245c1.506-2.146,3.556-3.926,5.917-5.158c2.365-1.232,5.001-1.883,7.622-1.883
+          			c3.153,0,6.221,0.894,8.866,2.579c2.576,1.641,4.651,3.951,5.995,6.689l2.448,4.992l2.441-4.992
+          			c1.34-2.744,3.415-5.062,5.993-6.702c2.649-1.686,5.717-2.579,8.87-2.579c1.086,0,2.17,0.108,3.22,0.313
+          			c2.784,0.549,5.414,1.845,7.606,3.753c2.195,1.902,3.849,4.321,4.791,7.002C116.832,45.653,117.123,47.765,117.008,49.988z
+          			 M83.259,155.34l-14.196-14.918l-6.466,6.83l20.663,21.742l20.669-21.742l-6.473-6.83L83.259,155.34z M83.259,122.395
+          			l-14.196-14.918l-6.466,6.83l20.663,21.742l20.669-21.742l-6.473-6.83L83.259,122.395z M84.044-31.874l14.197,14.918l6.47-6.83
+          			L84.044-45.528L63.378-23.786l6.473,6.83L84.044-31.874z M84.044,1.071l14.197,14.912l6.47-6.831L84.044-12.59L63.378,9.152
+          			l6.473,6.831L84.044,1.071z"/>
+
+          </svg>
+        </div>
+
+        <ul class="mood-list" id="mood-list">
+          <li class="mood-listitem"><span>10</span></li>
+          <li class="mood-listitem"><span>9</span></li>
+          <li class="mood-listitem"><span>8</span></li>
+          <li class="mood-listitem"><span>7</span></li>
+          <li class="mood-listitem"><span>6</span></li>
+          <li class="mood-listitem"><span>5</span></li>
+          <li class="mood-listitem"><span>4</span></li>
+          <li class="mood-listitem"><span>3</span></li>
+          <li class="mood-listitem"><span>2</span></li>
+          <li class="mood-listitem active"><span>1</span></li>
+        </ul>
+      </div>
+
+
+  </div>
+      <div id="loginContainer">
+
+        <div id="linputContainer">
+          <div id="loginLogo"> </div>
+          <input id="loginName" class="loginInput" type="text" placeholder="Username">
+          <input id="loginPassword" class="loginInput" type="password" placeholder="Password">
+          <input id="loginButton" class="loginButton" type="button" value="LOGIN">
+          <p id="loginText" class="loginParagraph"> or if you really haven't yet, just</p>
+          <input id="goToReg" class="loginButton" type="button" value="REGISTER">
+        </div>
+
+        <div id="registerContainer">
+          <div id="loginLogo"> </div>
+          <input id="registerEmail" class="loginInput" type="text" placeholder="E-Mail">
+          <input id="registerName" class="loginInput" type="text" placeholder="Username">
+          <input id="registerPassword" class="loginInput" type="password" placeholder="Password">
+          <p id="loginText" class="loginParagraph">
+            <input type="checkbox" id="tosCheck">
+            <label for="tosCheck">
+              I agree to the <span class="loginInLink" id="showTOS">TOS</span>
+          </p>
+        </label>
+          <input id="registerButton" class="loginButton" type="button" value="REGISTER">
+          <p id="lipErrorText" class="loginParagraph">
+            Just make sure everything's green <br/>
+            and you've read the terms ;) !
+          </p>
+        </div>
+
+          <div id="tosContainer" class="loginLTContainer">
+              <input id="tosNot" class="loginButton" type="button" value="BACK">
+
+
+              Termos de Utilização
+          <div>
+          <style type="text/css">
+              ol.lst-kix_vch2exlm50ie-2.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-2 0;
+              }
+
+              .lst-kix_861iv6n0066j-6 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-6;
+              }
+
+              .lst-kix_vch2exlm50ie-3 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-3;
+              }
+
+              .lst-kix_7bj3um8npqhz-4 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-4;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-0.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-0 0;
+              }
+
+              ol.lst-kix_vch2exlm50ie-5.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-5 0;
+              }
+
+              .lst-kix_861iv6n0066j-5 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-5;
+              }
+
+              .lst-kix_7bj3um8npqhz-3 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-3;
+              }
+
+              .lst-kix_ry142n37bny6-1 > li:before {
+                  content: "\0025cb  ";
+              }
+
+              .lst-kix_ry142n37bny6-0 > li:before {
+                  content: "  ";
+              }
+
+              .lst-kix_ry142n37bny6-2 > li:before {
+                  content: "\0025a0  ";
+              }
+
+              ol.lst-kix_7bj3um8npqhz-6.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-6 0;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-8 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-8.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-8 0;
+              }
+
+              .lst-kix_vch2exlm50ie-4 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-4;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-6 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-7 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_vch2exlm50ie-1 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-1;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-4 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-5 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-2 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-3.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-3 0;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-3 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-1.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-1 0;
+              }
+
+              .lst-kix_7bj3um8npqhz-7 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-7,lower-latin) ". ";
+              }
+
+              ol.lst-kix_861iv6n0066j-2 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-1 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_7bj3um8npqhz-6 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-6,decimal) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-8 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-8,lower-roman) ". ";
+              }
+
+              ol.lst-kix_861iv6n0066j-4 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-3 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_3rz3dobwipxs-7 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-7;
+              }
+
+              ol.lst-kix_861iv6n0066j-0 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_861iv6n0066j-8 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-8;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-0.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-0 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-0 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-0,decimal) ". ";
+              }
+
+              .lst-kix_3rz3dobwipxs-2 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-2,lower-roman) ". ";
+              }
+
+              ol.lst-kix_861iv6n0066j-6 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-5 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-8 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_3rz3dobwipxs-1 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-1,lower-latin) ". ";
+              }
+
+              ol.lst-kix_3rz3dobwipxs-3.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-3 0;
+              }
+
+              ol.lst-kix_861iv6n0066j-7 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-0 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-1 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-6.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-6 0;
+              }
+
+              .lst-kix_861iv6n0066j-3 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-3;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-5.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-5 0;
+              }
+
+              .lst-kix_vch2exlm50ie-0 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-0;
+              }
+
+              .lst-kix_vch2exlm50ie-6 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-6;
+              }
+
+              ol.lst-kix_vch2exlm50ie-4.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-4 0;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-1.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-1 0;
+              }
+
+              .lst-kix_861iv6n0066j-2 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-2;
+              }
+
+              .lst-kix_3rz3dobwipxs-6 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-6;
+              }
+
+              ol.lst-kix_861iv6n0066j-4.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-4 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-0 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-0;
+              }
+
+              .lst-kix_vch2exlm50ie-7 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-7;
+              }
+
+              .lst-kix_7bj3um8npqhz-8 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-8;
+              }
+
+              .lst-kix_7bj3um8npqhz-5 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-5;
+              }
+
+              ol.lst-kix_vch2exlm50ie-3.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-3 0;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-8.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-8 0;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-4.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-4 0;
+              }
+
+              ol.lst-kix_861iv6n0066j-3.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-3 0;
+              }
+
+              ol.lst-kix_vch2exlm50ie-6 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-5 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-8 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-7 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-2.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-2 0;
+              }
+
+              .lst-kix_7bj3um8npqhz-2 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-2;
+              }
+
+              .lst-kix_861iv6n0066j-0 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-0;
+              }
+
+              ol.lst-kix_861iv6n0066j-5.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-5 0;
+              }
+
+              ol.lst-kix_vch2exlm50ie-2 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-1 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-4 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_vch2exlm50ie-3 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_vch2exlm50ie-8 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-8;
+              }
+
+              .lst-kix_861iv6n0066j-0 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-0,decimal) ". ";
+              }
+
+              ol.lst-kix_861iv6n0066j-2.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-2 0;
+              }
+
+              ol.lst-kix_vch2exlm50ie-0 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_861iv6n0066j-2 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-2,lower-roman) ". ";
+              }
+
+              .lst-kix_861iv6n0066j-1 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-1,lower-latin) ". ";
+              }
+
+              .lst-kix_861iv6n0066j-3 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-3,decimal) ". ";
+              }
+
+              ol.lst-kix_3rz3dobwipxs-7.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-7 0;
+              }
+
+              .lst-kix_861iv6n0066j-5 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-5,lower-roman) ". ";
+              }
+
+              .lst-kix_861iv6n0066j-4 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-4,lower-latin) ". ";
+              }
+
+              .lst-kix_3rz3dobwipxs-3 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-3;
+              }
+
+              .lst-kix_vch2exlm50ie-7 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-7,lower-latin) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-8 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-8,lower-roman) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-5 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-5,lower-roman) ". ";
+              }
+
+              .lst-kix_3rz3dobwipxs-1 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-1;
+              }
+
+              .lst-kix_861iv6n0066j-6 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-6,decimal) ". ";
+              }
+
+              .lst-kix_861iv6n0066j-7 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-7,lower-latin) ". ";
+              }
+
+              .lst-kix_3rz3dobwipxs-4 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-4;
+              }
+
+              .lst-kix_861iv6n0066j-8 > li:before {
+                  content: "" counter(lst-ctn-kix_861iv6n0066j-8,lower-roman) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-6 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-6,decimal) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-0 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-0,decimal) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-1 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-1,lower-latin) ". ";
+              }
+
+              ol.lst-kix_7bj3um8npqhz-7.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-7 0;
+              }
+
+              ol.lst-kix_861iv6n0066j-8.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-8 0;
+              }
+
+              .lst-kix_vch2exlm50ie-3 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-3,decimal) ". ";
+              }
+
+              .lst-kix_vch2exlm50ie-4 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-4,lower-latin) ". ";
+              }
+
+              ol.lst-kix_vch2exlm50ie-1.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-1 0;
+              }
+
+              .lst-kix_vch2exlm50ie-2 > li:before {
+                  content: "" counter(lst-ctn-kix_vch2exlm50ie-2,lower-roman) ". ";
+              }
+
+              .lst-kix_3rz3dobwipxs-8 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-8,lower-roman) ". ";
+              }
+
+              ol.lst-kix_vch2exlm50ie-7.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-7 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-5 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-5,lower-roman) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-1 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-1;
+              }
+
+              .lst-kix_7bj3um8npqhz-0 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-0,decimal) ". ";
+              }
+
+              ol.lst-kix_861iv6n0066j-7.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-7 0;
+              }
+
+              ol.lst-kix_vch2exlm50ie-0.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-0 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-4 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-4,lower-latin) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-6 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-6;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-4.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-4 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-3 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-3,decimal) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-3 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-3,decimal) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-0 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-0;
+              }
+
+              .lst-kix_7bj3um8npqhz-2 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-2,lower-roman) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-4 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-4,lower-latin) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-1 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-1,lower-latin) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-5 > li:before {
+                  content: "" counter(lst-ctn-kix_7bj3um8npqhz-5,lower-roman) ". ";
+              }
+
+              .lst-kix_7bj3um8npqhz-7 > li {
+                  counter-increment: lst-ctn-kix_7bj3um8npqhz-7;
+              }
+
+              .lst-kix_3rz3dobwipxs-6 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-6,decimal) ". ";
+              }
+
+              ol.lst-kix_3rz3dobwipxs-2.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-2 0;
+              }
+
+              .lst-kix_3rz3dobwipxs-7 > li:before {
+                  content: "" counter(lst-ctn-kix_3rz3dobwipxs-7,lower-latin) ". ";
+              }
+
+              .lst-kix_ry142n37bny6-5 > li:before {
+                  content: "\0025a0  ";
+              }
+
+              ul.lst-kix_ry142n37bny6-8 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_ry142n37bny6-4 > li:before {
+                  content: "\0025cb  ";
+              }
+
+              .lst-kix_ry142n37bny6-6 > li:before {
+                  content: "\0025cf  ";
+              }
+
+              ul.lst-kix_ry142n37bny6-6 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-7 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_861iv6n0066j-6.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-6 0;
+              }
+
+              .lst-kix_ry142n37bny6-3 > li:before {
+                  content: "\0025cf  ";
+              }
+
+              .lst-kix_ry142n37bny6-7 > li:before {
+                  content: "\0025cb  ";
+              }
+
+              ul.lst-kix_ry142n37bny6-0 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-1 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-4 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-5 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-2 {
+                  list-style-type: none;
+              }
+
+              ul.lst-kix_ry142n37bny6-3 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-0 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_3rz3dobwipxs-2 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-2;
+              }
+
+              .lst-kix_vch2exlm50ie-2 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-2;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-8.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-8 0;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-4 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-3 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-2 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_3rz3dobwipxs-5 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-5;
+              }
+
+              .lst-kix_vch2exlm50ie-5 > li {
+                  counter-increment: lst-ctn-kix_vch2exlm50ie-5;
+              }
+
+              ol.lst-kix_7bj3um8npqhz-5.start {
+                  counter-reset: lst-ctn-kix_7bj3um8npqhz-5 0;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-1 {
+                  list-style-type: none;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-8 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_861iv6n0066j-4 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-4;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-1.start {
+                  counter-reset: lst-ctn-kix_3rz3dobwipxs-1 0;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-7 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_861iv6n0066j-7 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-7;
+              }
+
+              .lst-kix_ry142n37bny6-8 > li:before {
+                  content: "\0025a0  ";
+              }
+
+              ol.lst-kix_3rz3dobwipxs-6 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_861iv6n0066j-1 > li {
+                  counter-increment: lst-ctn-kix_861iv6n0066j-1;
+              }
+
+              ol.lst-kix_3rz3dobwipxs-5 {
+                  list-style-type: none;
+              }
+
+              .lst-kix_3rz3dobwipxs-8 > li {
+                  counter-increment: lst-ctn-kix_3rz3dobwipxs-8;
+              }
+
+              ol.lst-kix_vch2exlm50ie-6.start {
+                  counter-reset: lst-ctn-kix_vch2exlm50ie-6 0;
+              }
+
+              ol.lst-kix_861iv6n0066j-0.start {
+                  counter-reset: lst-ctn-kix_861iv6n0066j-0 0;
+              }
+
+              ol {
+                  margin: 0;
+                  padding: 0;
+              }
+
+              table td, table th {
+                  padding: 0;
+              }
+
+              .c3 {
+                  margin-left: 60pt;
+                  padding-top: 37pt;
+                  padding-left: 0pt;
+                  padding-bottom: 55pt;
+                  line-height: 1.15;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+                  margin-right: 24pt;
+              }
+
+              .c1 {
+                  background-color: #ffffff;
+                  color: #262626;
+                  font-weight: 700;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 10.5pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c11 {
+                  background-color: #efefef;
+                  color: #262626;
+                  font-weight: 700;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 10pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c10 {
+                  background-color: #ffffff;
+                  color: #3897f0;
+                  font-weight: 400;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 10pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c0 {
+                  background-color: #ffffff;
+                  color: #333333;
+                  font-weight: 400;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 10pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c2 {
+                  background-color: #ffffff;
+                  color: #262626;
+                  font-weight: 400;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 10pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c4 {
+                  background-color: #ffffff;
+                  color: #1d2129;
+                  font-weight: 700;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 9pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c12 {
+                  margin-left: 36pt;
+                  padding-top: 0pt;
+                  padding-bottom: 10pt;
+                  line-height: 1.15;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .c20 {
+                  color: #000000;
+                  font-weight: 400;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-size: 11pt;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c9 {
+                  margin-left: 72pt;
+                  padding-top: 0pt;
+                  padding-bottom: 10pt;
+                  line-height: 1.15;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .c14 {
+                  margin-left: 72pt;
+                  padding-top: 0pt;
+                  padding-left: 0pt;
+                  padding-bottom: 0pt;
+                  line-height: 1.15;
+                  text-align: left;
+              }
+
+              .c13 {
+                  padding-top: 0pt;
+                  padding-bottom: 3pt;
+                  line-height: 1.0;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .c19 {
+                  padding-top: 0pt;
+                  padding-bottom: 45pt;
+                  line-height: 1.538;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .c8 {
+                  padding-top: 24pt;
+                  padding-bottom: 42pt;
+                  line-height: 1.538;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .c23 {
+                  font-weight: 400;
+                  text-decoration: none;
+                  vertical-align: baseline;
+                  font-family: "Arial";
+                  font-style: normal;
+              }
+
+              .c5 {
+                  background-color: #ffffff;
+                  font-size: 10pt;
+                  color: #1155cc;
+                  text-decoration: underline;
+              }
+
+              .c18 {
+                  background-color: #efefef;
+                  font-size: 10pt;
+                  color: #262626;
+                  font-weight: 700;
+              }
+
+              .c6 {
+                  padding-top: 24pt;
+                  padding-bottom: 54pt;
+                  line-height: 1.538;
+                  text-align: left;
+              }
+
+              .c22 {
+                  background-color: #efefef;
+                  font-size: 10pt;
+                  color: #262626;
+              }
+
+              .c17 {
+                  background-color: #ffffff;
+                  max-width: 451.4pt;
+                  padding: 72pt 72pt 72pt 72pt;
+              }
+
+              .c15 {
+                  background-color: #ffffff;
+                  font-size: 10pt;
+                  color: #262626;
+              }
+
+              .c21 {
+                  color: inherit;
+                  text-decoration: inherit;
+              }
+
+              .c7 {
+                  padding: 0;
+                  margin: 0;
+              }
+
+              .c24 {
+                  font-weight: 700;
+              }
+
+              .c16 {
+                  height: 11pt;
+              }
+
+              .title {
+                  padding-top: 0pt;
+                  color: #000000;
+                  font-size: 26pt;
+                  padding-bottom: 3pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              .subtitle {
+                  padding-top: 0pt;
+                  color: #666666;
+                  font-size: 15pt;
+                  padding-bottom: 16pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              li {
+                  color: #000000;
+                  font-size: 11pt;
+                  font-family: "Arial";
+              }
+
+              p {
+                  margin: 0;
+                  color: #000000;
+                  font-size: 11pt;
+                  font-family: "Arial";
+              }
+
+              h1 {
+                  padding-top: 20pt;
+                  color: #000000;
+                  font-size: 20pt;
+                  padding-bottom: 6pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              h2 {
+                  padding-top: 18pt;
+                  color: #000000;
+                  font-size: 16pt;
+                  padding-bottom: 6pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              h3 {
+                  padding-top: 16pt;
+                  color: #434343;
+                  font-size: 14pt;
+                  padding-bottom: 4pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              h4 {
+                  padding-top: 14pt;
+                  color: #666666;
+                  font-size: 12pt;
+                  padding-bottom: 4pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              h5 {
+                  padding-top: 12pt;
+                  color: #666666;
+                  font-size: 11pt;
+                  padding-bottom: 4pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+
+              h6 {
+                  padding-top: 12pt;
+                  color: #666666;
+                  font-size: 11pt;
+                  padding-bottom: 4pt;
+                  font-family: "Arial";
+                  line-height: 1.15;
+                  page-break-after: avoid;
+                  font-style: italic;
+                  orphans: 2;
+                  widows: 2;
+                  text-align: left;
+              }
+          </style><p class="c19"><span class="c11">DISCLAIMER: THE PRESENT TERMS OF SERVICE AND PRIVACY POLICY, BOTH VALID AS OF 1ST APRIL 2017, ARE WRITTEN IN PORTUGUESE. DUE TO TIME CONSTRAINTS, WE HAVE NOT YET RELEASED THEIR ENGLISH VERSION, WHICH WILL BE MADE AVAILABLE TO ALL USERS OF THIS SERVICE IN THE SHORTEST TERM POSSIBLE. EVEN THOUGH THERE WILL BE AN ENGLISH VERSION, AS KOLLAJ IS BASED IN PORTUGAL, THE TERMS IN PORTUGUESE WILL PREVAIL OVER THE ENGLISH TERMS UPON ANY INCORRECT TRANSLATION OR INCONSISTENCY. THE ENGLISH VERSION OF THE TERMS OF SERVICE AND THE PRIVACY POLICY WILL BE PROVIDED ONLY FACILITATE USER ACCESS.</span></p><p class="c19"><span class="c18">Os presentes Termos de Utilização entram em vigor no dia 1 de Abril de 2017.</span><span class="c23 c22"> </span></p><p class="c19"><span class="c22">Ao aceder ou utilizar o site do Kollaj, o serviço do Kollaj ou quaisquer apps (incluindo apps móveis) disponibilizadas pelo Kollaj (coletivamente, o &quot;Serviço&quot;), independentemente do modo de acesso, o utilizador concorda em ficar vinculado pelos presentes termos de utilização (&quot;Termos de Utilização&quot;). O Serviço é propriedade e também controlado por Kristian Krasimirov Atanasov e equipa. </span><span class="c11">Os presentes Termos de Utilização afetam os direitos e obrigações legais do utilizador. Se o utilizador não concordar em ficar vinculado por todos os presentes Termos de Utilização, não deve aceder ou utilizar o Serviço.</span></p><p class="c19"><span class="c22 c23">Podem ocorrer situações em que oferecemos uma funcionalidade especial, que tenha os seus próprios termos e condições, os quais são aplicáveis em acréscimo aos presentes Termos de Utilização. Nesses casos, os termos específicos à funcionalidade especial têm precedência até ao ponto de conflito com os presentes Termos de Utilização.</span></p><p class="c19"><span class="c11">NOTIFICAÇÃO DE ARBITRAGEM: SALVO SE O UTILIZADOR UTILIZAR O DIREITO DE AUTOEXCLUSÃO E SALVO PARA DETERMINADOS TIPOS DE LITÍGIOS DESCRITOS NA SECÇÃO DE ARBITRAGEM ABAIXO, O UTILIZADOR CONCORDA QUE OS LITÍGIOS ENTRE ESTE E O KOLLAJ SERÃO RESOLVIDOS POR ARBITRAGEM INDIVIDUAL E VINCULATIVA, E ABDICA DO RESPETIVO DIREITO DE PARTICIPAR NUMA AÇÃO JUDICIAL COLETIVA OU EM ARBITRAGEM COLETIVA.</span></p><p class="c19"><span class="c1">Termos básicos</span></p><ol class="c7 lst-kix_7bj3um8npqhz-0 start" start="1"><li class="c3"><span class="c2">O utilizador tem de ter, pelo menos, 13 anos de idade para utilizar o Serviço.</span></li><li class="c3"><span class="c2">Não é permitida a publicação de fotografias nem de outro conteúdo violento, que mostre nudez ou nudez parcial, que seja discriminatório, ilegal, pornográfico ou sexualmente sugestivo, que incentive o ódio ou que esteja em infração através do Serviço.</span></li><li class="c3"><span class="c2">O utilizador é responsável por qualquer atividade que ocorra através da respetiva conta e concorda que não irá vender, transferir, licenciar ou ceder a conta, seguidores, nome de utilizador ou quaisquer outros direitos relativos à conta. Com a exceção de pessoas ou empresas expressamente autorizadas a criar contas em nome das respetivas entidades patronais ou clientes, o Kollaj proíbe a criação de qualquer conta em nome de outrem, e o utilizador concorda em não criar qualquer conta sem ser para si mesmo. O utilizador declara, também, que toda a informação fornecida ao Kollaj aquando do registo e em qualquer outra altura é verdadeira, exata, atual e completa, concordando em atualizar a respetiva informação, conforme necessário, para manter a veracidade e precisão da mesma.</span></li><li class="c3"><span class="c2">O utilizador concorda em não solicitar, recolher ou utilizar as credenciais de início de sessão de outros utilizadores do Kollaj.</span></li><li class="c3"><span class="c2">O utilizador é responsável por manter a respetiva palavra-passe confidencial e segura.</span></li><li class="c3"><span class="c2">O utilizador não pode difamar, perseguir, oprimir, abusar, assediar, ameaçar, fazer-se passar por ou intimidar pessoas ou entidades e não deve publicar informação privada ou confidencial através do Serviço, incluindo, sem cariz limitativo, a sua própria informação, ou de outra pessoa, de cartão de crédito, segurança social ou números de identificação nacional alternativa, números de telefone não públicos ou endereços de e-mail não públicos.</span></li><li class="c3"><span class="c2">O utilizador não pode usar o Serviço para qualquer finalidade ilegal ou não autorizada. O utilizador concorda em obedecer a todas as leis, regras e regulamentos (por exemplo, federais, estatais, locais e distritais) aplicáveis à respetiva utilização do Serviço e ao seu Conteúdo (definido abaixo), incluindo mas não limitado a leis de direitos de autor.</span></li><li class="c3"><span class="c2">O utilizador é exclusivamente responsável pelo seu próprio comportamento e por quaisquer dados, texto, ficheiros, informação, nomes de utilizador, imagens, gráficos, fotografias, perfis, clipes de áudio e vídeo, sons, trabalhos musicais, autoria de trabalhos originais, apps, ligações e outro conteúdo ou materiais (coletivamente, &quot;Conteúdo&quot;) que submeta, publique ou exiba no ou através do Serviço.</span></li><li class="c3"><span class="c2">O utilizador não pode mudar, modificar, adaptar ou alterar o Serviço nem mudar, modificar ou alterar outro site de modo a implicar, falsamente, que este se encontra associado ao Serviço ou ao Kollaj.</span></li><li class="c3"><span class="c2">O utilizador não pode aceder à API privada do Kollaj através de qualquer outro meio, excluindo a App e Site disponibilizados por parte do Serviço. </span></li><li class="c3"><span class="c2">O utilizador não pode criar nem enviar comunicações comerciais ou incómodas indesejadas, seja na forma de mensagens de e-mail, comentários, “vibes” ou outras (também conhecidos como &quot;spam&quot;) a qualquer utilizador do Kollaj.</span></li><li class="c3"><span class="c2">O utilizador não pode utilizar nomes de domínios ou URL da web no seu próprio nome de utilizador sem autorização prévia por escrito do Kollaj.</span></li><li class="c3"><span class="c2">O utilizador não pode interferir nem perturbar o Serviço ou servidores ou redes ligados ao Serviço, incluindo através da transmissão de worms, vírus, spyware, malware ou de qualquer outro código de natureza destrutiva ou nociva. O utilizador não pode injetar conteúdo ou código, nem de algum modo alterar ou afetar a apresentação ou visualização da página do Kollaj no browser ou dispositivo de um utilizador.</span></li><li class="c3"><span class="c2">O utilizador tem de cumprir as seguintes Normas da Comunidade do Kollaj:</span></li></ol><ol class="c7 lst-kix_7bj3um8npqhz-1 start" start="1"><li class="c14"><h4 id="h.t5c0x5i755il" style="display:inline"><span class="c4">Partilha apenas fotos e vídeos que tenhas tirado ou que tenhas o direito de partilhar.</span></h4></li></ol><p class="c12"><span class="c0">Como sempre, o conteúdo que publicas no Kollaj pertence-te. Lembra-te de publicar conteúdo autêntico e não publiques nada que tenhas copiado ou obtido na Internet e que não tenhas o direito de publicar.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="2"><li class="c14"><h4 id="h.gdr8ujayqovz" style="display:inline"><span class="c4">Publica fotos e vídeos que sejam apropriados para um público diversificado.</span></h4></li></ol><p class="c12"><span class="c0">Sabemos que, por vezes, as pessoas podem pretender partilhar imagens com nudez de natureza artística ou criativa, mas por vários motivos, não permitimos nudez no Kollaj. Isto inclui fotos, vídeos e alguns conteúdos criados digitalmente que contenham relações sexuais, genitais e nádegas em grande plano completamente expostas. Inclui também algumas fotos de mamilos femininos, mas são permitidas fotos de cicatrizes pós-mastectomia e de mulheres a amamentar. A nudez em fotos de pinturas e esculturas também é aceitável.</span></p><p class="c12"><span class="c0">As pessoas gostam de partilhar fotos ou vídeos dos seus filhos. Por motivos de segurança, por vezes poderemos eliminar imagens que mostrem crianças nuas ou parcialmente nuas. Mesmo que este conteúdo seja partilhado com boas intenções, pode ser utilizado por outras pessoas de forma imprevista.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="3"><li class="c14"><h4 id="h.tvw534pumhzc" style="display:inline"><span class="c4">Promove interações genuínas e com significado.</span></h4></li></ol><p class="c12"><span class="c0">Ajuda o Kollaj a manter-se livre de spam: não obtenhas gostos, seguidores ou partilhas artificialmente, não publiques conteúdo ou comentários repetitivos nem contactes pessoas repetidamente por motivos comerciais sem o consentimento das mesmas.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="4"><li class="c14"><h4 id="h.nmhgub4t04fx" style="display:inline"><span class="c4">Segue a legislação em vigor.</span></h4></li></ol><p class="c9"><span class="c0">O Kollaj não é um local para apoiar ou elogiar grupos de ódio, terrorismo ou crime organizado. Também não é permitido oferecer serviços sexuais, comprar ou vender armas de fogo e medicamentos sujeitos a receita médica (mesmo que seja legal fazê-lo na tua região) ou ilegais. Lembra-te sempre de seguir a legislação em vigor na venda ou compra de outros bens regulamentados. As contas que promovam jogos de apostas online, jogos de perícia online a dinheiro verdadeiro ou lotarias online têm de obter a nossa autorização prévia por escrito antes de utilizarem qualquer um dos nossos produtos.</span></p><p class="c9"><span class="c0">Temos tolerância zero relativamente à partilha de conteúdo sexual que envolva menores ou à ameaça de publicar imagens íntimas de outras pessoas.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="5"><li class="c14"><h4 id="h.94qt844tzct4" style="display:inline"><span class="c4">Respeita os outros membros da comunidade do Kollaj.</span></h4></li></ol><p class="c9"><span class="c0">Queremos cultivar uma comunidade positiva e diversificada. Eliminamos conteúdo que contenha ameaças credíveis ou discurso que incentiva o ódio, conteúdo que tenha como alvo indivíduos com a intenção de os humilhar ou envergonhar, informações pessoais com o propósito de chantagear ou assediar alguém e mensagens indesejadas repetidas. Normalmente, permitimos conversas mais intensas sobre pessoas referidas em notícias ou que têm um público geral de grandes dimensões devido à sua profissão ou atividades escolhidas.</span></p><p class="c9"><span class="c0">Nunca é aceitável encorajar a violência ou atacar pessoas com base na sua raça, etnia, nacionalidade, sexo, género, identidade sexual, orientação sexual, afiliação religiosa, incapacidade ou doença. Quando o discurso que incentiva o ódio é partilhado com o propósito de o desafiar ou para apelar à consciencialização, podemos permiti-lo. Nesses casos, pedimos que exprimas claramente a tua intenção.</span></p><p class="c9"><span class="c0">Não são permitidas ameaças graves de danos à segurança pública e pessoal. Isto inclui ameaças específicas de danos físicos, bem como ameaças de roubo, vandalismo e outros prejuízos financeiros. Analisamos cuidadosamente as denúncias de ameaças e consideramos diversos pontos para determinar se uma ameaça é credível.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="6"><li class="c14"><h4 id="h.q80zokt96ti7" style="display:inline"><span class="c4">Mantém o nosso ambiente de apoio ao não glorificares a automutilação.</span></h4></li></ol><p class="c9"><span class="c0">A comunidade do Kollaj preocupa-se com os seus membros e é frequentemente um lugar onde as pessoas com problemas, como distúrbios alimentares, mutilação ou outros tipos de automutilação, se unem para apelar à consciencialização ou procurar apoio.</span></p><p class="c9"><span class="c0">Encorajar ou incitar as pessoas a aceitar a automutilação vai contra este ambiente de apoio e eliminaremos esse conteúdo ou desativaremos contas se este nos for denunciado. Também poderemos eliminar conteúdo que identifique vítimas ou sobreviventes de automutilação, caso este se dirija a essas pessoas com o intuito de as atacar ou de forma humorística.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-1" start="7"><li class="c14"><h4 id="h.sb7izv99n5xx" style="display:inline"><span class="c4">Sê atencioso/a quando postares eventos dignos de aparecerem nas notícias.</span></h4></li></ol><p class="c9"><span class="c0">Compreendemos que muitas pessoas utilizam o Kollaj para partilhar eventos importantes e dignos de aparecerem nas notícias. Alguns destes tópicos podem envolver imagens gráficas. Uma vez que o Kollaj é utilizado por várias pessoas e faixas etárias diferentes, poderemos eliminar vídeos com violência gráfica intensa para nos certificarmos de que o Kollaj se mantém apropriado para todas as pessoas.</span></p><p class="c9"><span class="c0">Compreendemos que as pessoas partilham frequentemente este tipo de conteúdo como forma de contestação, para apelar à consciencialização ou para informar as pessoas. Se partilhares conteúdo por estes motivos, encorajamos-te a incluir uma legenda na tua foto com um aviso sobre a violência gráfica. Nunca é permitido partilhar imagens gráficas para efeitos sádicos ou para a glorificação da violência.</span></p><ol class="c7 lst-kix_7bj3um8npqhz-0" start="15"><li class="c3"><span class="c2">O utilizador não pode criar contas no Serviço através de meios não autorizados, incluindo mas não limitado à utilização de um dispositivo automatizado, script, bot, spider, crawler ou scraper.</span></li><li class="c3"><span class="c2">O utilizador não pode tentar impedir que outro utilizador utilize ou desfrute do Serviço, assim como não pode encorajar nem facilitar desrespeitos aos presentes Termos de Utilização nem de quaisquer outros termos do Kollaj.</span></li><li class="c3"><span class="c2">O desrespeito dos presentes Termos de Utilização pode, a critério exclusivo do Kollaj, resultar na cessação da conta do Kollaj do utilizador. O utilizador compreende e concorda que o Kollaj não pode ser e não será responsável pelo Conteúdo publicado no Serviço e que o utilizador usa o Serviço por sua própria conta e risco. Se o utilizador desrespeitar a letra ou espírito dos presentes Termos de Utilização ou de algum modo criar riscos ou possível exposição jurídica para o Kollaj, podemos parar de lhe fornecer parte ou a totalidade do Serviço.</span></li></ol><h3 class="c6" id="h.acxscv1c7495"><span class="c1">Condições gerais</span></h3><ol class="c7 lst-kix_vch2exlm50ie-0 start" start="1"><li class="c3"><span class="c15">Reservamos o direito de modificar ou cessar o Serviço ou o acesso do utilizador ao Serviço, por qualquer razão, sem notificação prévia, em qualquer momento e sem responsabilidades perante o utilizador. O utilizador pode desativar a sua conta do Kollaj ao enviar um e-mail destinado ao endereço “</span><span class="c5"><a class="c21" href="mailto:spacewalkingninja@gmail.com">spacewalkingninja@gmail.com</a></span><span class="c2">” solicitando por escrito que quer deixar de usar a conta associada à este email. Se cessarmos o acesso do utilizador ao Serviço ou se o utilizador usar o metodo acima descrito para desativar a sua conta, as respetivas fotografias, comentários, “vibes”, amizades e todos os outros dados deixarão de estar acessíveis através da conta (por exemplo, os utilizadores não poderão navegar para tal nome de utilizador e ver as respetivas fotografias), mas estes materiais e dados poderão permanecer e ser exibidos dentro do Serviço (por exemplo, se o Conteúdo tiver sido novamente partilhado por outros).</span></li><li class="c3"><span class="c2">Mediante a cessação, todas as licenças e outros direitos concedidos ao utilizador, nos presentes Termos de Utilização, cessam imediatamente.</span></li><li class="c3"><span class="c15">Reservamos o direito, a nosso exclusivo critério, de alterar os presentes Termos de Utilização (</span><span class="c15 c24">&quot;Termos Atualizados&quot;</span><span class="c2">) ao longo do tempo. Salvo se efetuarmos uma alteração devido a motivos legais ou administrativos, forneceremos notificação prévia razoável antes de os Termos Atualizados entrarem em vigor. O utilizador concorda em como o podemos notificar sobre os Termos Atualizados ao publicá-los no Serviço, e que a respetiva utilização do Serviço após a data de entrada em vigor dos Termos Atualizados (ou adoção de outra conduta razoavelmente especificada por nós) constitui a aceitação dos Termos Atualizados. Assim, o utilizador deve rever os presentes Termos de Utilização e quaisquer Termos Atualizados antes de utilizar o Serviço. Os Termos Atualizados entrarão em vigor a partir do momento em que são publicados, ou a partir de uma data posterior de acordo com o especificado nos Termos Atualizados, e serão aplicáveis à utilização do Serviço a partir de tal momento. Os presentes Termos de Utilização regem quaisquer litígios resultantes antes da data de entrada em vigor dos Termos Atualizados.</span></li><li class="c3"><span class="c2">Reservamos o direito de recusar acesso ao Serviço, a qualquer pessoa, por qualquer motivo, em qualquer momento.</span></li><li class="c3"><span class="c2">Reservamos o direito de forçar a perda de qualquer nome de utilizador, por qualquer motivo.</span></li><li class="c3"><span class="c2">Poderemos, mas sem qualquer obrigação, eliminar, editar, bloquear e/ou monitorizar Conteúdo ou contas com Conteúdo que determinemos, a nosso exclusivo critério, estar em desrespeito dos presentes Termos de Utilização.</span></li><li class="c3"><span class="c2">O utilizador é exclusivamente responsável pela respetiva interação com outros utilizadores do Serviço, online e offline. O utilizador concorda que o Kollaj não é responsável pela conduta de qualquer outro utilizador. O Kollaj reserva-se o direito, mas sem qualquer obrigação, de monitorizar ou de se envolver em litígios entre os utilizadores. O utilizador deve usar o seu senso comum e melhor discernimento ao interagir com outros, incluindo quando enviar ou publicar Conteúdo ou qualquer informação pessoal ou outra.</span></li><li class="c3"><span class="c2">Poderão existir ligações do Serviço, ou de comunicações que o utilizador receba do Serviço, para sites ou funcionalidades de terceiros. Também poderão existir ligações para sites ou funcionalidades de terceiros em imagens ou comentários dentro do Serviço. O Serviço também inclui conteúdo de terceiros que não é controlado, mantido ou apoiado por nós. A funcionalidade no Serviço também pode permitir interações entre o Serviço e um site ou funcionalidade de terceiros, incluindo apps que ligam o Serviço ou o perfil do utilizador no Serviço a um site ou funcionalidade de terceiros. Por exemplo, o Serviço pode incluir uma funcionalidade que permite ao utilizador partilhar Conteúdo do Serviço ou o Conteúdo do utilizador com terceiros, o qual pode ser publicamente divulgado no serviço ou app de tais terceiros. A utilização desta funcionalidade requer, normalmente, que o utilizador inicie sessão na sua conta, no serviço de terceiros, por sua própria conta e risco. O Kollaj não controla quaisquer destes serviços web de terceiros nem o respetivo conteúdo. O utilizador reconhece, expressamente, que concorda que o Kollaj não é, de modo algum, responsável por quaisquer serviços ou funcionalidades de terceiros. A CORRESPONDÊNCIA E TRANSAÇÕES COMERCIAIS DO UTILIZADOR COM TERCEIROS ENCONTRADOS ATRAVÉS DO SERVIÇO SÃO EXCLUSIVAMENTE ENTRE O UTILIZADOR E TERCEIROS. O utilizador pode escolher, por sua própria conta e risco e mediante o seu exclusivo critério, usar apps que liguem o Serviço ou o perfil do utilizador no Serviço a um serviço de terceiros (cada um, uma &quot;App&quot;) e tal App pode interagir com, ligar a ou recolher e/ou extrair informação de e para o perfil do utilizador no Serviço. Ao utilizar tais Apps, o utilizador reconhece e concorda com o seguinte: (i) se o utilizador usar uma App para partilhar informação, este autoriza que a informação sobre o respetivo perfil no Serviço seja partilhada; (ii) o uso de uma App, por parte do utilizador, pode fazer com que informações de identificação pessoal sejam publicamente divulgadas e/ou associadas ao utilizador, mesmo se o próprio Kollaj não tiver fornecido tais informações; e (iii) o uso de uma App é feito por opção e risco do utilizador, sendo que o utilizador exonera as Partes do Kollaj (definidas abaixo) da atividade relacionada com a App.</span></li><li class="c3"><span class="c2">O utilizador concorda em como é responsável por todas as despesas de dados em que incorre através da utilização do Serviço.</span></li><li class="c3"><span class="c2">Proibimos a utilização de crawlers, scrapers, colocação em cache ou qualquer outra forma de aceder por meios automáticos a qualquer conteúdo no Serviço, incluindo mas não limitado a perfis e fotografias de utilizador (salvo como possa ser o resultado de protocolos ou tecnologias de pesquisa padrão utilizados por um motor de busca, com o consentimento expresso do Kollaj).</span></li></ol><h3 class="c6" id="h.f4f507fx9oyd"><span class="c1">Direitos</span></h3><ol class="c7 lst-kix_3rz3dobwipxs-0 start" start="1"><li class="c3"><span class="c15">O Kollaj não reivindica propriedade de qualquer Conteúdo publicado pelo utilizador no ou através do Serviço. Ao invés, o utilizador concede ao Kollaj uma licença não exclusiva, totalmente paga e isenta de direitos de autor, transferível, passível de sublicenciamento e de aplicação mundial para utilizar o Conteúdo publicado pelo utilizador no ou através do Serviço, sujeita à Política de privacidade do Serviço, aqui disponibilizada </span><span class="c5"><a class="c21" href="https://www.google.com/url?q=https://docs.google.com/document/d/1feqrYci-FBky2Ae2Xk70m3ZjKUNQxC4Z3DIYSxnj9UI/&amp;sa=D&amp;ust=1491138880032000&amp;usg=AFQjCNHQG8V2KBV5Xd-hSfgLvC0oRnh20A">https://docs.google.com/document/d/1feqrYci-FBky2Ae2Xk70m3ZjKUNQxC4Z3DIYSxnj9UI/</a></span><span class="c2"> , incluindo mas não limitado às secções 3 (&quot;Partilhar a informação do utilizador&quot;), 4 (&quot;Como armazenamos a informação do utilizador&quot;) e 5 (&quot;As escolhas do utilizador sobre a respetiva informação&quot;). O utilizador pode escolher quem pode visualizar o respetivo Conteúdo e atividades, incluindo fotografias, conforme descrito na Política de privacidade.</span></li><li class="c3"><span class="c2">Parte do Serviço é financiada por receitas de anúncios e pode exibir anúncios e promoções, e o utilizador concorda, pelo presente documento, que o Kollaj pode colocar tais anúncios e promoções no Serviço ou no, sobre ou em conjunto com o Conteúdo do utilizador. A maneira, o modo e a extensão de tais anúncios e promoções estão sujeitos a alteração sem notificação específica para o utilizador.</span></li><li class="c3"><span class="c2">O utilizador reconhece que podemos nem sempre identificar serviços pagos, conteúdo patrocinado ou comunicações comerciais como tal.</span></li><li class="c3"><span class="c2">O utilizador declara e garante que: (i) é o proprietário do Conteúdo que publica no ou através do Serviço ou que de algum modo dispõe do direito de ceder os direitos e licenças estipulados nos presentes Termos de Utilização; (ii) a publicação e o uso do Conteúdo do utilizador no ou através do Serviço não desrespeita, não constitui a apropriação indevida nem infringe os direitos de terceiros, incluindo mas não limitado a direitos de privacidade, direitos de publicidade, direitos de autor, direitos de marca comercial e/ou outros direitos de propriedade; (iii) pagará quaisquer direitos de autor, taxas e quantias devidos resultantes de Conteúdo que este publique no ou através do Serviço; e (iv) tem o direito e a capacidade legal de subscrever os presentes Termos de Utilização na respetiva jurisdição.</span></li><li class="c3"><span class="c2">O Serviço contém conteúdo que é propriedade do Kollaj (&quot;Conteúdo do Kollaj&quot;) ou licenciado por este. O Conteúdo do Kollaj está protegido por direitos de autor, marca comercial, segredo comercial e outras leis, e, tal como entre o utilizador e o Kollaj, o Kollaj é proprietário e preserva todos os direitos sobre o Conteúdo do Kollaj e o Serviço. O utilizador não pode remover, alterar ou ocultar qualquer marca de direitos de autor, marca comercial, marca de serviço ou outras notificações de direitos de propriedade no ou que acompanhem o Conteúdo do Kollaj, e o utilizador não pode reproduzir, modificar, adaptar, preparar trabalhos derivados com base em, executar, exibir, publicar, distribuir, transmitir, difundir, vender, licenciar ou de algum modo explorar o Conteúdo do Kollaj.</span></li><li class="c3"><span class="c2">O nome e o logótipo do Kollaj são marcas comerciais do Kollaj, não podendo ser copiadas, imitadas ou utilizadas, total ou parcialmente, sem autorização prévia por escrito do Kollaj.  Em acréscimo, todos os cabeçalhos de página, gráficos personalizados, ícones de botões e scripts são marcas de serviço, marcas comerciais e/ou imagens de marca do Kollaj, e não podem ser copiados, imitados ou utilizados, total ou parcialmente, sem a autorização prévia por escrito do Kollaj.</span></li><li class="c3"><span class="c2">Embora seja intenção do Kollaj que o Serviço esteja disponível o máximo de tempo possível, existirão ocasiões em que o Serviço pode ser interrompido, incluindo, sem cariz limitativo, para operações agendadas de manutenção ou atualização, para reparações de emergência ou devido a falha de ligações de telecomunicações e/ou equipamento. Além disso, o Kollaj reserva-se o direito de eliminar qualquer Conteúdo do Serviço, por qualquer motivo, sem notificação prévia. O Conteúdo eliminado do Serviço pode continuar a ser armazenado pelo Kollaj, incluindo, sem cariz limitativo, de modo a estar em conformidade com determinadas obrigações legais, mas não pode ser acedido sem uma ordem judicial válida. Consequentemente, o Kollaj encoraja o utilizador a manter uma cópia de segurança do Conteúdo. Por outras palavras, o Kollaj não é um serviço de cópia de segurança e o utilizador concorda em não depender do Serviço para propósitos de cópia de segurança ou armazenamento de Conteúdo. O Kollaj não é responsável, perante o utilizador, por qualquer modificação, suspensão ou interrupção dos Serviços ou perda de qualquer Conteúdo. O utilizador também reconhece que a Internet pode estar sujeita a falhas de segurança e que o envio de Conteúdo ou de outras informações pode não ser seguro.</span></li><li class="c3"><span class="c2">O utilizador concorda que o Kollaj não é responsável por, nem apoia, Conteúdo publicado no Serviço. O Kollaj não tem qualquer obrigação de pré-selecionar, monitorizar, editar ou eliminar qualquer Conteúdo. Se o Conteúdo do utilizador desrespeitar os presentes Termos de Utilização, o utilizador pode ser responsabilizado legalmente por tal Conteúdo.</span></li><li class="c3"><span class="c15">Salvo estabelecido de outro modo na Política de privacidade do Serviço, disponibilizada em </span><span class="c5"><a class="c21" href="https://www.google.com/url?q=https://docs.google.com/document/d/1feqrYci-FBky2Ae2Xk70m3ZjKUNQxC4Z3DIYSxnj9UI/&amp;sa=D&amp;ust=1491138880035000&amp;usg=AFQjCNFGtmLVA4_qCAIinlaHLWS1LNutaA">https://docs.google.com/document/d/1feqrYci-FBky2Ae2Xk70m3ZjKUNQxC4Z3DIYSxnj9UI/</a></span><span class="c15"> </span><span class="c2">, entre o utilizador e o Kollaj, qualquer Conteúdo será não confidencial e não proprietário e não seremos responsáveis por qualquer utilização ou divulgação de Conteúdo. O utilizador reconhece e concorda que a respetiva relação com o Kollaj não é confidencial, fiduciária nem qualquer outro tipo de relação especial, e que a decisão do utilizador em submeter qualquer Conteúdo não coloca o Kollaj numa posição diferente da de membros do público geral, incluindo relativamente ao Conteúdo do utilizador. Nenhum do Conteúdo do utilizador estará sujeito a qualquer obrigação de confidencialidade por parte do Kollaj, e o Kollaj não será responsável por qualquer utilização ou divulgação de qualquer Conteúdo fornecido pelo utilizador.</span></li><li class="c3"><span class="c2">É política do Kollaj não aceitar nem considerar conteúdo, informação, ideias, sugestões ou outros materiais que não aqueles especificamente solicitados por nós e aos quais determinados termos, condições e requisitos específicos se podem aplicar. Isto serve para evitar quaisquer equívocos caso as ideias do utilizador sejam semelhantes às que desenvolvemos ou estamos a desenvolver independentemente. Consequentemente, o Kollaj não aceita materiais ou ideias não solicitadas, e não assume qualquer responsabilidade por materiais ou ideias assim transmitidos. Se, apesar da nossa política, o utilizador escolher enviar-nos conteúdo, informação, ideias, sugestões ou outros materiais, este concorda que o Kollaj é livre de utilizar tal conteúdo, informação, ideias, sugestões ou outros materiais, para qualquer que seja o propósito, incluindo mas não limitado a desenvolver produtos e serviços de marketing, sem qualquer responsabilidade de pagamento, de qualquer tipo, para com o utilizador.</span></li></ol><h3 class="c6" id="h.moozwmwk64h4"><span class="c1">Comunicar desrespeitos de direitos de autor e propriedade intelectual</span></h3><ol class="c7 lst-kix_861iv6n0066j-0 start" start="1"><li class="c3"><span class="c2">Respeitamos os direitos de terceiros e esperamos que o utilizador faça o mesmo.</span></li><li class="c3"><span class="c15">Fornecemos-te as ferramentas para que nos ajudes a proteger os teus direitos de propriedade intelectual. Para enviar uma comunicação de infração dos direitos de autor e, ou propriedade intelectual, basta enviares um e-mail a “spacewalkingninja@gmail.com”</span></li><li class="c3"><span class="c2">Se infringires, repetidamente, os direitos de propriedade intelectual de terceiros, procederemos à desativação da conta do utilizador, quando apropriado.</span></li></ol><h3 class="c6" id="h.9dxn82akpdba"><span class="c1">Exclusão de garantias</span></h3><p class="c8"><span class="c2">O SERVIÇO, INCLUINDO MAS NÃO LIMITADO A CONTEÚDO DO KOLLAJ, É DISPONIBILIZADO &quot;TAL COMO ESTÁ&quot;, &quot;COMO DISPONÍVEL&quot; E &quot;COM TODAS AS FALHAS&quot;. DE ACORDO COM O MÁXIMO PERMITIDO POR LEI, NEM O KOLLAJ NEM A SUA EMPRESA CONTROLADORA, NEM NENHUM DOS RESPETIVOS FUNCIONÁRIOS, GESTORES, REPRESENTANTES OU AGENTES (COLETIVAMENTE, AS &quot;PARTES DO KOLLAJ&quot;) EFETUAM QUAISQUER DECLARAÇÕES OU GARANTIAS OU APOIOS, DE QUALQUER TIPO, EXPRESSOS OU IMPLÍCITOS, RELATIVAMENTE: (A) AO SERVIÇO; (B) AO CONTEÚDO DO KOLLAJ; (C) AO CONTEÚDO DE UTILIZADOR; OU (D) À SEGURANÇA ASSOCIADA À TRANSMISSÃO DE INFORMAÇÃO PARA O KOLLAJ OU ATRAVÉS DO SERVIÇO. EM ACRÉSCIMO, AS PARTES DO KOLLAJ RECUSAM TODAS AS GARANTIAS, EXPRESSAS OU IMPLÍCITAS, INCLUINDO, MAS SEM CARIZ LIMITATIVO, AS GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO, NÃO DESRESPEITO, TÍTULO, COSTUME, COMÉRCIO, UTILIZAÇÃO TRANQUILA, INTEGRAÇÃO DE SISTEMA E ISENÇÃO DE VÍRUS INFORMÁTICOS. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">AS PARTES DO KOLLAJ NÃO DECLARAM NEM GARANTEM QUE O SERVIÇO ESTARÁ ISENTO DE ERROS OU DE INTERRUPÇÕES; QUE OS DEFEITOS SERÃO CORRIGIDOS; OU QUE O SERVIÇO OU O SERVIDOR QUE DISPONIBILIZA O SERVIÇO SE ENCONTRA LIVRE DE QUAISQUER COMPONENTES NOCIVOS, INCLUINDO MAS NÃO LIMITADO A VÍRUS. AS PARTES DO KOLLAJ NÃO EFETUAM QUAISQUER DECLARAÇÕES OU GARANTIAS EM COMO A INFORMAÇÃO (INCLUINDO QUAISQUER INSTRUÇÕES) NO SERVIÇO SEJA EXATA, COMPLETA OU ÚTIL. O UTILIZADOR RECONHECE QUE O RESPETIVO USO DO SERVIÇO É EFETUADO EXCLUSIVAMENTE POR PRÓPRIA CONTA E RISCO. AS PARTES DO KOLLAJ NÃO DECLARAM QUE O USO DO SERVIÇO, POR PARTE DO UTILIZADOR, É LEGAL EM QUALQUER JURISDIÇÃO ESPECÍFICA E AS PARTES DO KOLLAJ RECUSAM, ESPECIFICAMENTE, TAIS GARANTIAS. ALGUMAS JURISDIÇÕES LIMITAM OU NÃO PERMITEM A RECUSA DE GARANTIAS IMPLÍCITAS OU OUTRAS, PELO QUE A RECUSA ACIMA PODE NÃO SER APLICÁVEL AO UTILIZADOR NA MEDIDA EM QUE A LEGISLAÇÃO DE TAL JURISDIÇÃO SEJA APLICÁVEL AO UTILIZADOR E AOS PRESENTES TERMOS DE UTILIZAÇÃO. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">AO ACEDER OU USAR O SERVIÇO, O UTILIZADOR DECLARA E GARANTE QUE AS RESPETIVAS ATIVIDADES SÃO LEGAIS EM TODAS AS JURISDIÇÕES ONDE ESTE ACEDER OU UTILIZAR O SERVIÇO. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">AS PARTES DO KOLLAJ NÃO APOIAM CONTEÚDO E REJEITAM, ESPECIFICAMENTE, QUALQUER RESPONSABILIDADE PERANTE QUALQUER PESSOA OU ENTIDADE POR QUAISQUER PERDAS, DANOS (REAIS, CONSEQUENTES, PUNITIVOS OU OUTROS), FERIMENTOS, RECLAMAÇÕES, RESPONSABILIDADE OU OUTRA CAUSA, DE QUALQUER TIPO, BASEADA EM OU RESULTANTE DE QUALQUER CONTEÚDO.</span></p><h3 class="c6" id="h.cukh1tnomkdm"><span class="c1">Limitação de Responsabilidade; Renúncia</span></h3><p class="c8"><span class="c2">EM NENHUMA CIRCUNSTÂNCIA AS PARTES DO KOLLAJ SERÃO RESPONSÁVEIS, PERANTE O UTILIZADOR, POR QUAISQUER PERDAS OU DANOS, DE QUALQUER TIPO (INCLUINDO MAS NÃO LIMITADO A PERDAS OU DANOS DIRETOS, INDIRETOS, ECONÓMICOS, EXEMPLARES, ESPECIAIS, PUNITIVOS, INCIDENTAIS OU CONSEQUENCIAIS), QUE ESTEJAM DIRETA OU INDIRETAMENTE RELACIONADOS COM: (A) O SERVIÇO; (B) O CONTEÚDO DO KOLLAJ; (C) O CONTEÚDO DE UTILIZADOR; (D) O USO OU INCAPACIDADE DE USO, POR PARTE DO UTILIZADOR, OU DESEMPENHO DO SERVIÇO; (E) QUALQUER AÇÃO TOMADA EM LIGAÇÃO COM UMA INVESTIGAÇÃO EFETUADA PELAS PARTES DO KOLLAJ OU POR AUTORIDADES DE APLICAÇÃO DA LEI RELATIVAMENTE À UTILIZAÇÃO DO SERVIÇO POR PARTE DO UTILIZADOR OU DE QUALQUER OUTRA PARTE; (F) QUALQUER AÇÃO TOMADA EM LIGAÇÃO A PROPRIETÁRIOS DE DIREITOS DE AUTOR OU DE PROPRIEDADE INTELECTUAL; (G) QUAISQUER ERROS OU OMISSÕES NA OPERAÇÃO DO SERVIÇO; OU (H) QUAISQUER DANOS SUSTIDOS PELO COMPUTADOR, DISPOSITIVO MÓVEL OU OUTRO EQUIPAMENTO OU TECNOLOGIA, DO UTILIZADOR, INCLUINDO MAS NÃO LIMITADO A DANOS RESULTANTES DE QUALQUER FALHA DE SEGURANÇA OU DE QUALQUER VÍRUS, BUG, ALTERAÇÃO ILEGAL, FRAUDE, ERRO, OMISSÃO, INTERRUPÇÃO, DEFEITO, ATRASO NA OPERAÇÃO OU TRANSMISSÃO, FALHA DE LINHA OU REDE INFORMÁTICA OU TÉCNICA OU QUALQUER OUTRA AVARIA, INCLUINDO MAS NÃO LIMITADO A DANOS RESULTANTES DE PERDA DE LUCROS, PERDA DE REPUTAÇÃO, PERDA DE DADOS, PARALISAÇÃO DE TRABALHO, PRECISÃO DE RESULTADOS OU FALHA OU AVARIA INFORMÁTICA, MESMO SE EXPECTÁVEIS OU MESMO SE AS PARTES DO KOLLAJ TIVESSEM SIDO AVISADAS DE OU DEVESSEM TER CONHECIMENTO DA POSSIBILIDADE DE TAIS DANOS, QUER NUMA AÇÃO CONTRATUAL, NEGLIGÊNCIA, RESPONSABILIDADE ESTRITA OU ATO ILÍCITO (INCLUINDO, SEM CARIZ LIMITATIVO, SE CAUSADOS, TOTAL OU PARCIALMENTE, POR NEGLIGÊNCIA, ATOS DE FORÇA MAIOR, FALHA DE TELECOMUNICAÇÕES OU ROUBO OU DESTRUIÇÃO DO SERVIÇO). EM NENHUM CASO AS PARTES DO KOLLAJ SERÃO RESPONSÁVEIS, PERANTE O UTILIZADOR OU QUALQUER OUTRA PESSOA, POR PERDAS, DANOS OU FERIMENTOS, INCLUINDO MAS NÃO LIMITADO A MORTE OU FERIMENTOS PESSOAIS. ALGUNS ESTADOS NÃO PERMITEM A EXCLUSÃO OU LIMITAÇÃO DE DANOS INCIDENTAIS OU CONSEQUENTES, PELO QUE A LIMITAÇÃO OU EXCLUSÃO ACIMA PODE NÃO SER APLICÁVEL AO UTILIZADOR. EM NENHUM CASO A RESPONSABILIDADE DAS PARTES DO KOLLAJ, PERANTE O UTILIZADOR, POR TODOS OS DANOS, PERDAS OU CAUSAS OU AÇÃO EXCEDERÁ OS CEM EUROS DA UNIÃO EUROPEIA (100,00 €). </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">O UTILIZADOR CONCORDA QUE, NO CASO DE ESTE INCORRER EM DANOS, PERDAS OU LESÕES RESULTANTES DE AÇÕES OU OMISSÕES DO KOLLAJ, OS DANOS, SE EXISTIREM, CAUSADOS AO UTILIZADOR NÃO SÃO IRREPARÁVEIS NEM SUFICIENTES PARA CONFERIR O DIREITO A UMA INJUNÇÃO QUE IMPEÇA QUALQUER EXPLORAÇÃO DE QUALQUER SITE, SERVIÇO, PROPRIEDADE, PRODUTO OU OUTRO CONTEÚDO QUE SEJA PROPRIEDADE DAS OU CONTROLADO PELAS PARTES DO KOLLAJ, E O UTILIZADOR NÃO TERÁ QUAISQUER DIREITOS PARA PROIBIR OU LIMITAR O DESENVOLVIMENTO, PRODUÇÃO, DISTRIBUIÇÃO, PUBLICIDADE, EXPOSIÇÃO OU EXPLORAÇÃO DE QUALQUER SITE, PROPRIEDADE, PRODUTO, SERVIÇO OU OUTRO CONTEÚDO QUE SEJA PROPRIEDADE DAS OU CONTROLADO PELAS PARTES DO KOLLAJ. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">AO ACEDER AO SERVIÇO, O UTILIZADOR COMPREENDE QUE PODE ESTAR A RENUNCIAR A DIREITOS RELATIVAMENTE A RECLAMAÇÕES QUE SEJAM, NO PRESENTE, DESCONHECIDAS OU INSUSPEITAS.</span></p><p class="c8"><span class="c2">O KOLLAJ NÃO É RESPONSÁVEL PELAS AÇÕES, CONTEÚDO, INFORMAÇÃO OU DADOS DE TERCEIROS, E O UTILIZADOR ISENTA O KOLLAJ, OS RESPETIVOS ADMINISTRADORES, REPRESENTANTES, FUNCIONÁRIOS E AGENTES DE QUAISQUER RECLAMAÇÕES E DANOS, CONHECIDOS E DESCONHECIDOS, RESULTANTES DE OU DE ALGUM MODO RELACIONADOS COM QUALQUER RECLAMAÇÃO QUE O UTILIZADOR POSSA TER CONTRA TAIS TERCEIROS.</span></p><h3 class="c6" id="h.uf5qgcwjaqnm"><span class="c1">Indemnização</span></h3><p class="c8"><span class="c2">O utilizador (bem como qualquer parte em nome da qual o utilizador opere uma conta ou atividade no Serviço) concorda em defender (mediante pedido do Kollaj), indemnizar e exonerar as Partes do Kollaj de e contra quaisquer ações, responsabilidades, danos, perdas e despesas, incluindo mas não limitado a honorários e custos de advogados, resultantes de ou de algum modo relacionados com qualquer um dos seguintes pontos (incluindo como resultado das atividades diretas do utilizador no Serviço ou das atividades efetuadas em nome do utilizador): (i) o Conteúdo do utilizador ou acesso ao ou uso do Serviço, por parte do utilizador; (ii) o desrespeito, ou alegado desrespeito, por parte do utilizador, dos presentes Termos de Utilização; (iii) o desrespeito, por parte do utilizador, de qualquer direito de terceiros, incluindo mas não limitado a qualquer direito de propriedade intelectual, de publicidade, confidencialidade, propriedade ou privacidade; (iv) o desrespeito, por parte do utilizador, de quaisquer leis, regras, regulamentos, códigos, estatutos, ordens de quaisquer autoridades governamentais e para-governamentais, incluindo mas não limitado a todas as autoridades administrativas, reguladoras e legislativas; ou (v) qualquer interpretação errónea feita pelo utilizador. O utilizador irá colaborar, tanto quanto solicitado pelo Kollaj, na defesa de qualquer ação. O Kollaj reserva-se o direito de assumir, exclusivamente, a defesa e controlo de qualquer assunto sujeito a indemnização por parte do utilizador, e este último não procederá, em circunstância alguma, à regularização de qualquer ação sem o consentimento prévio por escrito do Kollaj.</span></p><h3 class="c6" id="h.8kwg9crochcj"><span class="c1">Arbitragem</span></h3><p class="c8"><span class="c2">Salvo se o utilizador exercer a autoexclusão ou para litígios relativamente a: (1) propriedade intelectual do utilizador ou do Kollaj (tal como marcas comerciais, imagens de marca, nomes de domínios, segredos comerciais, direitos de autor e patentes); (2) desrespeitos dos Termos da API; ou (3) desrespeitos das disposições 13 ou 15 dos Termos básicos, acima (&quot;Litígios excluídos&quot;), o utilizador concorda que todos os litígios entre este e o Kollaj (quer tais litígios impliquem ou não terceiros) relativamente à relação do utilizador com o Kollaj, incluindo mas não limitado a litígios relacionados com os presentes Termos de Utilização, com o uso do Serviço, por parte do utilizador, e/ou direitos de privacidade e/ou publicidade, serão resolvidos através de arbitragem individual e vinculativa, ao abrigo da legislação Portuguesa em vigor, o utilizador e o Kollaj renunciam, expressamente, pelo presente documento, a um julgamento com júri. Como alternativa, o utilizador pode intentar a sua ação no tribunal local de casos menores, se permitido pelos regulamentos de tal tribunal. O utilizador apenas pode intentar ações em seu próprio nome. Nem o utilizador nem o Kollaj participarão numa ação judicial coletiva ou arbitragem coletiva relativa a quaisquer situações abrangidas pelo presente acordo. O utilizador também concorda em não participar em ações intentadas numa instância de ação coletiva ou representativa, ou em ações consolidadas que envolvam a conta de outra pessoa, caso o Kollaj seja parte do processo. O juízo sobre a decisão judicial tomada pelo árbitro pode ser submetida a qualquer tribunal com jurisdição competente. Não obstante qualquer disposição da legislação aplicável, o árbitro não terá a autoridade de atribuir indenizações ou reparações que estejam em conflito com os presentes Termos de Utilização. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">O utilizador tem a opção de efetuar a auto exclusão deste acordo para arbitragem. Se assim fizer, nem o utilizador nem o Kollaj podem requerer que o outro participe num processo de arbitragem. Para efetuar a autoexclusão, o utilizador deve notificar o Kollaj, por escrito, dentro de 30 dias após a data na qual se tornou sujeito desta disposição relativa a arbitragem. O utilizador deve usar este endereço para efetuar a autoexclusão: </span></p><p class="c13"><span class="c2">Kristian K. Atanasov,</span></p><p class="c13"><span class="c2">R. Antonio Pinto Carvalho Nº137,</span></p><p class="c13"><span class="c2">Oliveira De Azemeis, 3720-224</span></p><p class="c13"><span class="c2">Portugal</span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">O utilizador deve incluir o respetivo nome e endereço de residência, o endereço de e-mail que utiliza para a sua conta do Kollaj e uma declaração clara em como se pretende autoexcluir deste acordo de arbitragem. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">Se a proibição de ações coletivas e outras intentadas em nome de terceiros, mencionada acima, for considerada não aplicável, todo o texto anterior, nesta secção sobre Arbitragem, é considerado nulo e inválido. Este acordo de arbitragem continuará em vigor após a cessação da relação do utilizador com o Kollaj.</span></p><h3 class="c6" id="h.wi6nvp7kaqpw"><span class="c1">Limite de tempo relativamente a reclamações</span></h3><p class="c8"><span class="c2">O utilizador concorda que qualquer reclamação que possa ter, resultante ou relativa à relação deste com o Kollaj, deve ser registada no prazo de um ano após surgimento de tal reclamação; de outro modo, a reclamação do utilizador fica permanentemente impedida.</span></p><h3 class="c6" id="h.7doojcw76khi"><span class="c1">Lei e jurisdição em vigor</span></h3><p class="c8"><span class="c2">Os presentes Termos de Utilização são regidos e interpretados em conformidade com as leis do Estado da Califórnia, sem recurso a quaisquer princípios de conflitos de leis E NÃO SERÃO, DE MODO ESPECÍFICO, REGIDOS PELAS CONVENÇÕES DAS NAÇÕES UNIDAS SOBRE OS CONTRATOS DE COMPRA E VENDA INTERNACIONAL DE MERCADORIAS, SE DE OUTRO MODO APLICÁVEIS. Para qualquer ação judicial ou de equidade relativa à disposição sobre arbitragem dos presentes Termos de Utilização, dos Litígios excluídos ou se o utilizador se autoexcluir do acordo de arbitragem, o utilizador concorda em resolver qualquer litígio que tenha com o Kollaj exclusivamente num tribunal estatal ou federal localizado em Santa Clara, na Califórnia, e a submeter-se à jurisdição pessoal dos tribunais localizados no distrito de Santa Clara para o propósito de litigar tais litígios. </span></p><p class="c8 c16"><span class="c2"></span></p><p class="c8"><span class="c2">Se qualquer uma das disposições dos presentes Termos de Utilização for considerada ilegal, nula ou, por qualquer motivo, não aplicável durante a arbitragem ou por um tribunal de jurisdição competente, então tal disposição será considerada separável dos presentes Termos de Utilização e não afetará a validade e aplicabilidade de quaisquer disposições remanescentes. A não insistência ou não aplicação de desempenho rigoroso, por parte do Kollaj, de qualquer disposição dos presentes Termos não deve ser interpretada como renúncia de qualquer disposição ou direito. Nenhuma renúncia de qualquer um dos presentes Termos será considerada uma renúncia contínua ou adicional de tal termo ou condição ou de qualquer outro termo ou condição. O Kollaj reserva-se o direito de alterar esta disposição sobre resolução de litígios, mas tais alterações não serão aplicáveis a litígios resultantes antes da data de entrada em vigor da alteração. Esta disposição sobre resolução de litígios permanecerá em vigor após a cessação de qualquer transação que o utilizador tenha com o Kollaj.</span></p><h3 class="c6" id="h.55xm7j1obcpp"><span class="c1">Acordo integral</span></h3><p class="c8"><span class="c2">Se o utilizador estiver a utilizar o Serviço em nome de uma entidade legal, o utilizador declara que está autorizado a celebrar um acordo em nome de tal entidade legal. Os presentes Termos de Utilização constituem o acordo integral entre o utilizador e o Kollaj e regem o uso do Serviço, por parte do utilizador, substituindo quaisquer acordos anteriores entre o utilizador e o Kollaj. O utilizador não efetuará a cessão dos Termos de Utilização nem de quaisquer direitos nem delegará quaisquer obrigações resultantes, total ou parcialmente, de modo voluntário ou por aplicação da lei, sem o consentimento prévio por escrito do Kollaj. Qualquer cessão ou delegação expressa, por parte do utilizador, sem o consentimento prévio adequado por escrito do Kollaj será considerada nula e inválida. O Kollaj pode efetuar a cessão dos presentes Termos de Utilização ou de quaisquer direitos resultantes sem o consentimento do utilizador. Se qualquer uma das disposições dos presentes Termos de Utilização for considerada, por um tribunal de jurisdição competente, inválida ou de outro modo não aplicável, as partes concordam que tal secção será considerada separável dos presentes Termos de Utilização e esta não afetará a validade e a aplicabilidade das disposições remanescentes, continuando as disposições remanescentes dos Termos de Utilização em vigor. Nem a conduta entre as partes nem a prática de comércio atuarão de modo a modificar os Termos de Utilização. Os presentes Termos de Utilização não conferem quaisquer direitos de terceiro beneficiário.</span></p><h3 class="c6" id="h.6x7eain1v5jm"><span class="c1">Restrições de território</span></h3><p class="c8"><span class="c2">A informação facultada no Serviço não se destina a distribuição a ou utilização por qualquer pessoa ou entidade em qualquer jurisdição ou país onde tal distribuição ou utilização seja contrária à lei ou regulamento ou que sujeite o Kollaj a qualquer obrigação de registo em tal jurisdição ou país. Reservamos o direito de limitar a disponibilidade do Serviço, ou de qualquer parte do Serviço, a qualquer pessoa, área geográfica ou jurisdição, a qualquer altura e a nosso exclusivo critério, e a limitar as quantidades de qualquer conteúdo, programa, produto, serviço ou outra funcionalidade que o Kollaj forneça. </span></p><p class="c8"><span class="c2">O software relacionado com ou disponibilizado pelo Serviço pode ser sujeito aos controlos de exportação da União Europeia. Consequentemente, nenhum software do Serviço pode ser transferido, exportado ou novamente exportado: (a) para (ou para um cidadão ou residente de) qualquer país ao qual a União Europeia tenha imposto um embargo; ou (b) a qualquer pessoa ou entidade a que a União Europeia ou Portugal proíbirem acesso. Ao transferir qualquer software relacionado com o Serviço, o utilizador declara e garante que não está localizado em, sob o controlo de, nem é cidadão ou residente de qualquer país em tais condições e que não se encontra em nenhuma de tais listas. </span></p><p class="c8"><span class="c15">A data de entrada em vigor dos presentes Termos de Utilização é o dia 1 de abril de 2017. Os presentes Termos de Utilização foram escritos em português (Portugal). Na medida em que qualquer versão traduzida dos presentes Termos de Utilização entre em conflito com a versão em português, a versão em português tem primazia.</span></p></div>
+
+
+
+
+            <input id="tosNot" class="loginButton" type="button" value="Naah..">
+          <input id="tosYes" class="loginButton" type="button" value="I SHIP IT">
+        </div>
+
+      </div>
+
+  <svg version="1.1" id="header" style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="-36.5 60 468 64" overflow="visible" enable-background="new -36.5 34.25 468 120" xml:space="preserve"  zoomAndPan="disable">
+  <g id="LogoGroup" zoomAndPan="disable">
+    <g>
+  		<rect x="104.026" y="71.343" fill-rule="evenodd" clip-rule="evenodd" fill="none" width="181.808" height="45.429"/>
+  		<path fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" d="M245.1,73.424h-3.365l-13.59,34.513h4.047l4.232-10.95h13.783
+  			l4.279,10.95h4.141L245.1,73.424z M237.828,93.398l4.053-10.644c0.643-1.802,1.131-3.456,1.482-4.959
+  			c0.553,1.958,1.08,3.611,1.6,4.962l3.998,10.64H237.828z"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="211.932,73.571 207.932,73.571 207.932,107.937
+  			227.094,107.937 227.094,104.324 211.932,104.324 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="147.426,73.564 142.7,73.564 127.101,90.602
+  			127.101,73.576 123.103,73.576 123.103,107.939 127.101,107.939 127.101,94.465 130.701,91.27 143.243,107.937 147.939,107.937
+  			133.603,88.505 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="189.345,73.571 185.345,73.571 185.345,107.937
+  			204.51,107.937 204.51,104.324 189.345,104.324 		"/>
+  		<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" points="147.941,107.937 147.939,107.937 147.944,107.943 		"/>
+  		<path fill-rule="evenodd" clip-rule="evenodd" fill="#02343F" d="M164.369,73.016c-5.086,0-9.006,1.535-11.766,4.621
+  			c-2.755,3.087-4.137,7.417-4.137,13.008c0,5.64,1.377,10.014,4.125,13.109c2.749,3.09,6.655,4.646,11.719,4.646
+  			c4.946,0,8.822-1.575,11.602-4.729c2.781-3.152,4.171-7.479,4.171-12.976l0.01,0.004c0-5.514-1.381-9.839-4.154-12.984
+  			C173.163,74.588,169.3,73.016,164.369,73.016z M172.95,101.303c-1.949,2.399-4.822,3.604-8.626,3.604
+  			c-3.779,0-6.671-1.204-8.652-3.611c-1.98-2.406-2.974-5.94-2.974-10.6l0.016-0.012c0-4.589,0.987-8.084,2.97-10.491
+  			c1.983-2.408,4.88-3.611,8.686-3.611c3.794,0,6.656,1.196,8.59,3.592c1.933,2.388,2.902,5.894,2.902,10.522
+  			C175.861,95.363,174.892,98.902,172.95,101.303z"/>
+  		<path fill="#02343F" d="M258.332,116.985c-1.477,0-2.633-0.209-3.48-0.634v-3.406c1.115,0.314,2.277,0.47,3.48,0.47
+  			c1.551,0,2.734-0.47,3.541-1.406c0.803-0.94,1.203-2.291,1.203-4.065V73.571h3.998v34.039c0,2.978-0.75,5.279-2.252,6.918
+  			C263.316,116.168,261.154,116.985,258.332,116.985z"/>
+  		<path fill="#FFFFFF" d="M227.094,107.939h-2.5l1.436-3.644h1.086"/>
+  		<path fill="#FFFFFF" d="M226.426,102.873c0,0-1.152,5.529-1.543,5.794c-0.389,0.27,1.711,2.914,2.609-0.291
+  			c0.902-3.203,2.318-5.108,1.105-5.301c-1.215-0.194-2.176-0.207-2.176-0.207L226.426,102.873z"/>
+  	</g>
+  	<rect x="-80.5" y="-8.75" fill="none" width="90" height="201"/>
+  </g>
+  <g id="messages">
+	<rect id="THISISMSGBG" x="335.167" y="77.25" fill="#FAFAFA" width="75.333" height="34"/>
+  	<g>
+  			<path id="XMLID_4_" fill="none" stroke="#3D4959" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+  			M387.321,108.61h20.96l-9.372-9.373c0,0,0-0.998,0-5.325c0-4.328-4.089-4.088-4.089-4.088s-23.015,0-26.943,0
+  			s-4.089,4.088-4.089,4.088s0,6.341,0,10.649c0,4.308,4.089,4.088,4.089,4.088l40.425-0.039l-9.373-9.772"/>
+
+  			<path id="XMLID_3_" fill="none" stroke="#3D4959" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+  			M359.043,98.479h-20.961l9.374-9.373c0,0,0-0.997,0-5.325s4.088-4.088,4.088-4.088s23.014,0,26.943,0
+  			c3.928,0,4.107,4.088,4.107,4.088s0,6.342,0,10.65c0,4.307-4.088,4.088-4.088,4.088l-40.425-0.04l9.374-9.771"/>
+  	</g>
+  </g>
+  <g id="notifications">
+    <style type="text/css">
+    #pulsar{
+      opacity: 0.6;
+      stroke-dasharray: 175;
+      stroke-dashoffset: 350;
+      -webkit-animation: draw 1.4s linear;
+      -moz-animation: draw 1.4s linear;
+      animation: draw 1.4s linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @-moz-keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    </style>
+  	<rect id="THISISPULSARBG" x="-20.167" y="80.583" fill="#FAFAFA" width="101.333" height="36.333"/>
+  	<path fill="none" fill="rgba(100,100,100,0.1)"  d="M-20.623,94.051h46.772c0.874-3.742,1.622-3.929,2.245-0.561c0.624,3.368,0.936,3.866,0.936,1.497
+  		c0-2.37,0.188-2.807,0.562-1.31c0.374,1.497,0.562,1.746,0.562,0.748c0-0.998,0.374,1.185,1.122,6.548
+  		c0.749,5.363,1.185,1.621,1.31-11.225c0.125-12.847,0.375-9.105,0.748,11.225c0.375,20.33,0.811,19.084,1.311-3.742
+  		c0.748-34.237,0.373-2.057,1.871-1.87c1.496,0.187,0.187,0.187,1.496-1.871c0.873-1.372,1.123-0.874,0.748,1.497
+  		c1.123,0.748,1.497-1.123,1.871-3.181c0.375-2.058,0.375,1.871,1.684,2.058h39.289"/>
+  	<path id="pulsar" d="M-20.623,94.051h46.772c0.874-3.742,1.622-3.929,2.245-0.561c0.624,3.368,0.936,3.866,0.936,1.497
+  		c0-2.37,0.188-2.807,0.562-1.31c0.374,1.497,0.562,1.746,0.562,0.748c0-0.998,0.374,1.185,1.122,6.548
+  		c0.749,5.363,1.185,1.621,1.31-11.225c0.125-12.847,0.375-9.105,0.748,11.225c0.375,20.33,0.811,19.084,1.311-3.742
+  		c0.748-34.237,0.373-2.057,1.871-1.87c1.496,0.187,0.187,0.187,1.496-1.871c0.873-1.372,1.123-0.874,0.748,1.497
+  		c1.123,0.748,1.497-1.123,1.871-3.181c0.375-2.058,0.375,1.871,1.684,2.058h39.289"/>
+  </g>
+  </svg>
+
+<!--
+      <ul id="header">
+        <li id="notifications" class="hC">
+          <svg version="1.1" id="heartbeat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="112 30 360 160" style="enable-background:new 0 0 20 20;" xml:space="preserve"  zoomAndPan="disable">
+              <path stroke="rgba(15,0,0,0.1)" fill="none" stroke-width="1.5" stroke-linejoin="round"
+        			d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+              <path id="pulsar" stroke="rgba(60,72,88,1)" fill="none" stroke-width="2.5" stroke-linejoin="round"
+        	    d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" />
+            </svg>
+        </li>
+        <li id="logo" class="hC"> </li>
+        <li id="messages" class="hC"> </li>
+      </ul>
+-->
+        <div id="picViewerFull"> </div>
+        <div id = "mainContainer">
+
+          <ul id="mainNav">
+             <li><a href="#feed" id="feedLink"></a></li>
+             <li><a href="#sendPicture" id="sendPicLink"></a></li>
+             <li><a href="#profile" id="profLink"></a></li>
+          </ul>
+
+         <div id = "feed" class="bottomMenu">
+          <div id="searchF">
+            <input id="searchQuery" class="feedSearch" type="text" placeholder="Search anything">
+            <input id="fsButton" class="fsButton" type="button" />
+          </div>
+          <div id="searchRes" style="display:none;"> </div>
+          <div id="vibeView"></div>
+          <div id="picViewer"> </div>
+          <div id="feedRes" ></div>
+         </div>
+
+         <div id = "sendPicture" class="bottomMenu">
+
+           <div id="otherOptions" style="display:none">
+
+             <div id="selfieMode"> <p>SELFIE</p> </div>
+             <div id="videoMode"> <p> VIDEO </p> </div>
+             <div id="galleryMode"> <p> BROWSE</p></div>
+
+           </div>
+
+
+           <div id="takePicture">
+                <div id="editorHelper">
+                  <div class="questionMark" id="questionIcon"> </div>
+                  <div class="calibrateIcon" id="calibrationTool"> </div>
+                  <div id="helpHolder">
+                    <p> Hey! This is the Editor. </p>
+                    <p> You can make 2 cuts, </p>
+                    <p> each cut must start before, and after the photo. </p>
+                    <p> The part that does not contain the center point gets discarded. </p>
+                    <p> Hope you enjoy this, @spacewalkingninja :) ! </p>
+                   </div>
+                  <div id="calibrateHolder">
+
+                    <div class="calibrationValue">0</div>
+                    <input type="range" id="calibrationRanger" min="-0.1" max="0.1" step="0.001" value="0">
+                    <p id="calibrateMsg"> This is not a toy! </p>
+                    <p> Higher values make your cuts go higher. <br/>
+                    <span style="font-size:0.9rem; line-height:0.9rem;"> If you're a developer I've wrote some things about this on the about page! </span>
+                    </p>
+                  </div>
+                   <div id="leNextStepper">
+                     <div id="detailStep" class="arrow-a arrow--right"></div>
+                   </div>
+
+                </div>
+                <div id="detailsWindow">
+                  <textarea id="uploadPicDesc" placeholder="Description"></textarea>
+                   <div class="detailsOption">
+                     <input type="checkbox" id="feedCheck">
+                     <label for="feedCheck"> Show in the feed </label>
+                   </div>
+                   <div class="detailsOption">
+                     <input type="checkbox" id="fullImgCheck">
+                     <label for="fullImgCheck"> Show entire image page </label>
+                   </div>
+             <!--
+             <div class="detailsOption">
+               <input type="checkbox" id="fbCheck">
+               <label for="fbCheck"> Share on Facebook </label>
+             </div> -->
+
+             <div id="timerContainer">
+             <div class="timer">
+                 <div class="timer">
+                     <div class="timer">
+                         <div class="timer">
+                             <div class="timer">
+                                 <div class="timer">
+                                     <div class="timer">
+                                         <div class="timer">
+                                             <div class="timer">
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+           </div>
+
+           <div id="uploadBHolder">
+           <div class="round-button">
+              <div class="round-button-circle" id="uploadMyPic">
+                <p> The Button </p>
+              </div>
+            </div>
+          </div>
+
+           </div>
+
+
+           <div id="editorHolder">
+             <svg id="mySvg"> </svg>
+           </div>
+
+           <div id="debuDiv"> </div>
+           </div>
+
+
+         </div>
+
+         <div id = "profile" class="bottomMenu">
+
+
+           <ul id="profileInfo">
+             <li id="profileFollowers"> 24k </li>
+             <li id="profileName"> @JohnDoe </li>
+             <li id="profileFollowing"> 15k </li>
+           </ul>
+           <div id="profilePicDiv">
+              <div class='crop' id="whereuputurppic"></div>
+           </div>
+           <svg id="profileSVG"> </svg>
+
+           <div id="helpingDiv" style="display:none"> </div>
+
+         </div>
+
+      </div>
+
+      <div id = "msg" style="display:none">
+         <div class="contactBox" id="msgresholder">
+
+      </div>
+
+      <div id="chat">
+        <div id="chatbox" style="display:none">
+
+
+          <div id="theChatThing" style="margin: 4.2rem auto !important;" class="feedCommentsHolder">
+
+          </div>
+
+
+
+        </div>
+        <div id="writeBox">
+
+          <div id="chatForm" class="feedCommentForm" style="display:block !important;">
+            <input id="chatInput" class="feedCommentInput" data-sendTo="0" type="text" placeholder="You can say something!">
+            <input id="chatButton" class="feedCommentBtn" type="button" value="> send <">
+          </div>
+
+        </div>
+      </div>
+    </div>
+      <div id = "vibes" style="display:none">
+      </div>
+
+    <!--INCLUDE: cordova-->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--Custom code starts here-->
+    <script type="text/javascript" src="js/snap.svg-min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
+    <script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
+    <script type="text/javascript" src="js/jquery.timeago.js"></script>
+    <script type="text/javascript" src="js/sha3.min.js"></script>
+    <!--INCLUDE: index to detect deviceready-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--Start app-->
+    <script type="text/javascript">
+
+        app.initialize();
+
+        $(function() {
+          $( "#mainContainer" ).tabs();
+        });
+
+    </script>
+
+</body> 
+
+</html>

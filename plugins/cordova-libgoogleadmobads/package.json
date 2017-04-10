@@ -1,0 +1,47 @@
+{
+  "name": "cordova-libgoogleadmobads",
+  "version": "7.13.1",
+  "description": "iOS Google AdMob Ads library base dependency for other plugins",
+  "cordova": {
+    "id": "cordova-libgoogleadmobads",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appfeel/google-iosadmobads.git"
+  },
+  "keywords": [
+    "ad",
+    "ads",
+    "admob",
+    "google",
+    "advertising",
+    "advertisment",
+    "publicity",
+    "earn",
+    "win",
+    "play",
+    "services",
+    "iad",
+    "flurry",
+    "monetization",
+    "money",
+    "appfeel",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "AppFeel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appfeel/google-iosadmobads/issues"
+  },
+  "homepage": "https://github.com/appfeel/google-iosadmobads#readme"
+}
